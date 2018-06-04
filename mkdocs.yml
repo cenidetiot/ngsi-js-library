@@ -1,0 +1,22 @@
+site_name: NgsiJS - Library 
+site_description: Library NGSI
+docs_dir: docs/
+pages:
+  - Home: index.md
+  - ngsi-parser: 
+    - Introduction: ngsi/index.md
+    - Entities Functions: ngsi/docs/EntitiesFunctions.md
+    - Generate Context Queries: ngsi/docs/ContextQueries.md
+    - Data Model JSON Schema Analizer: ngsi/docs/SchemaAnalizer.md
+  - ocb-sender:
+    - Introduction: ocb/index.md
+    - Entities Functions: ocb/docs/EntitiesFunctions.md
+    - Query Functions: ocb/docs/QueryFunctions.md
+    - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
+  - Modules Usage:
+    - Examples of both npm module usage: modulesUsage/index.md
+theme: readthedocs
+markdown_extensions: [toc,fenced_code]
+extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
+repo_url: https://github.com/smartsdkCenidet/NGSIJS-Library
+edit_uri: 'edit/master/docs/'
