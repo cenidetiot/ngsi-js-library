@@ -1,2 +1,2 @@
-require('./NGSI.js');
-require('./OCB.js');
+var ngsi = require('./NGSI.js');
+var ocb = require('./OCB.js');

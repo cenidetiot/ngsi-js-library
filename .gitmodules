@@ -1,0 +1,3 @@
+[submodule "ngsi-parser"]
+	path = ngsi-parser
+	url = https://github.com/cenidetiot/ngsi-parser.git
