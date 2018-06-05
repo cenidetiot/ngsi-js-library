@@ -46,4 +46,5 @@ If value is **null**, then **None** is used.
 ```
 
 #### License 
-MIT &copy; Daniel Torres & Haidée Onofre
+
+MIT 

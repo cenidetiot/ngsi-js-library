@@ -81,7 +81,8 @@ cb.getEntityTypes()
 ```
 
 ## License
-MIT © [Haidée Onofre & Daniel Torres]
+
+MIT 
 
 
 
