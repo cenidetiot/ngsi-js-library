@@ -1,4 +1,4 @@
-# FIWARE OCB - sender  
+# OCB - sender  
 
 [![https://nodei.co/npm/ocb-sender.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/ocb-sender.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ocb-sender)
 
