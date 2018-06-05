@@ -1,10 +1,5 @@
 # NGSI-parser
 
-[![https://nodei.co/npm/ngsi-parser.png?downloads=true&downloadRank=true&stars=true](https://nodei.co/npm/ngsi-parser.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/ngsi-parser)
-
-[![Build Status](https://api.travis-ci.org/cenidetiot/OCB.jsLibrary.svg?branch=master)](https://travis-ci.org/cenidetiot/NGSI.jsLibrary)
-[![devDependencies Status](https://david-dm.org/dwyl/hapi-auth-jwt2/dev-status.svg)](https://david-dm.org/dwyl/hapi-auth-jwt2?type=dev)
-
 ## What is ngsi-parser?
 
 ngsi-parser is a npm module for parsing and converting a simple JSON or value to a NSGI-compliant object
