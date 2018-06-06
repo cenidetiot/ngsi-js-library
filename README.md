@@ -19,8 +19,20 @@ OCB-sender manipulates FIWARE-NGSIv2 objects with the aim of sending them to the
 
 ## Installation pre-requirements and requirements
 
+- For the pre-requirements of installation, refer to the [Pre-requirements](index.md#pre-requirements-of-installation) section.
+- For the installation of ngsi-parser npm module, refer to the documentation of this module in the [How to Install](ngsi/index.md#how-to-install) section. 
+- For the installation of ocb-sender npm module, refer to the documentation of this module in the [How to Install](ocb/index.md#how-to-install) section.
 
 ## Modules usage 
+
+### ngsi-parser module
+- Refer to the [ngsi-parser](ngsi/index.md) section for the more information about functionalities of this module and how to implement them.
+
+### ocb-sender module
+- Refer to the [ocb-sender](ocb/index.md) section for the more information about functionalities of this module and how to implement them.
+
+### Examples
+- In the [Examples of both modules usage](modulesUsage/index.md) section refer information about how to use functionalities of both module together.
 
 * [Read the Docs](http://ngsi-js-library.readthedocs.io/en/latest/)
 * [Github Page](https://smartsdkcenidet.github.io/NGSIJS-Library/)
