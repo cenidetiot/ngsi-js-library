@@ -2,23 +2,25 @@
 
 ## Introduction
 
-The NGSI JavaScript library is a software tool that aims the treatment of JSON entities or models for its conversion to NGSI context data models, which can be manipulated and operated by the FIWARE Orion ContextBroker.
+The NGSI library for JavaScript is a software tool with the aim of transforming JSON entities to NGSI data models, which can be manipulated or operated by the FIWARE Orion Context Broker. This library can be implemented in  applications through RESTFul web services or backend, with the NodeJS execution environment.
 The NGSI JavaScript Library is composed of two npm modules:
 
 ### NGSI-parser module
 
-NGSI-parser module analyzes the syntax of unstructured JSON objects to transform them into FIWARE-NGSIv2 objects.
+NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv context entities.
 
-[https://github.com/cenidetiot/NGSI.jsLibrary](https://github.com/cenidetiot/NGSI.jsLibrary)
+[ngsi-parser repository](https://github.com/cenidetiot/ngsi-parser)
 
 ### OCB-sender module
+
 OCB-sender manipulates FIWARE-NGSIv2 objects with the aim of sending them to the FIWARE Orion Context Broker and, in this way make operations with them.
 
-[https://github.com/cenidetiot/OCB.jsLibrary](https://github.com/cenidetiot/OCB.jsLibrary)
+[ocb-sender repository](https://github.com/cenidetiot/ocb-sender)
 
-## Installation and Configuration
+## Installation pre-requirements and requirements
 
-## Documentation Links:
 
-* [Read the Docs](http://ngsijs-library.readthedocs.io/en/latest/)
+## Modules usage 
+
+* [Read the Docs](http://ngsi-js-library.readthedocs.io/en/latest/)
 * [Github Page](https://smartsdkcenidet.github.io/NGSIJS-Library/)
