@@ -1,5 +1,5 @@
 
-### Examples of both npm module usage.
+## Examples of both npm module usage.
 
 #### Create an Entity in the ContextBroker
 ```js

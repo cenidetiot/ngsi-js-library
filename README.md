@@ -34,3 +34,9 @@ OCB-sender manipulates FIWARE-NGSIv2 objects with the aim of sending them to the
 ### Examples
 - In the [Examples of both modules usage](doc/modulesUsage/index.md) section refer information about how to use functionalities of both module together.
 
+## Important reminder about clone this GIT repository
+
+In order to clone this repository its necessary execute **git clone --recursive command**, to download the code and resources of submodules ngsi-parser and ocb-sender.
+    
+    git clone --recursive https://github.com/cenidetiot/ngsi-js-library.git
+

@@ -10,7 +10,7 @@ The NGSI Library is composed of two npm modules:
 
 ### NGSI-parser module
 
-NGSI-parser module analyzes the syntax of non-structured JSON objects or attributes to transform them into FIWARE-NGSIv2 context entities.
+NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv context entities.
 
 [ngsi-parser](https://github.com/cenidetiot/ngsi-parser)
 
@@ -33,8 +33,8 @@ The current version of Node.js is 8.10.0, this version includes npm in its versi
 
 The installation of both modules of the NGSI Javascript library requires the previous installation of the following versions.
 
-- Node.js> = v8.x.x (in version 8.10.0 or higher)
-- npm> = 5.x.x (in version 5.0.0 or higher)
+- node.js >= 8.x.x (in version 8.10.0 or higher)
+- npm >= 5.x.x (in version 5.0.0 or higher)
 
 To verify the current version of Node and npm, execute the following commands in console:
 
