@@ -1,6 +1,6 @@
 site_name: NgsiJS - Library 
 site_description: Library NGSI
-docs_dir: docs/
+docs_dir: doc/
 pages:
   - Home: index.md
   - ngsi-parser: 
@@ -18,5 +18,5 @@ pages:
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
-repo_url: https://github.com/smartsdkCenidet/NGSIJS-Library
+repo_url: https://github.com/cenidetiot/ngsi-js-library
 edit_uri: 'edit/master/docs/'
