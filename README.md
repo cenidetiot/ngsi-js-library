@@ -1,4 +1,4 @@
-# NGSIJS Library.
+# NGSI-JS Library.
 
 ## Introduction
 
