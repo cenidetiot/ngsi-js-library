@@ -1,6 +1,6 @@
 
 # Context Queries
-***
+
 ## Indéx navigation
 
 * [Context Queries](#context-queries)
