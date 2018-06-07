@@ -1,5 +1,5 @@
 # Entities Functions
-***
+
 ## Indéx navigation
 
 * [Entities Functions](#entities-functions)
