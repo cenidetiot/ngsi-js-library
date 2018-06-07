@@ -1,5 +1,4 @@
-
-
+# Schema Analizer
 ngsi-parser helps you to manage your Data Models like used in Fiware, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.
 
 You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
