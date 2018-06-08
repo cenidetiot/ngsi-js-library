@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data Model JSON Schema Analizer - NGSI Library for Javascript</title>
+  <title>Data Model JSON Schema Analizer - NGSI-JS Library</title>
   
 
   <link rel="shortcut icon" href="../../../img/favicon.ico">
@@ -39,7 +39,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../../.." class="icon icon-home"> NGSI Library for Javascript</a>
+        <a href="../../.." class="icon icon-home"> NGSI-JS Library</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -167,7 +167,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../../..">NGSI Library for Javascript</a>
+        <a href="../../..">NGSI-JS Library</a>
       </nav>
 
       
@@ -198,7 +198,8 @@
             <div class="section">
               
                 <h1 id="schema-analizer">Schema Analizer</h1>
-<p>ngsi-parser helps you to manage your Data Models like used in Fiware, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.</p>
+<p>W
+ngsi-parser helps you to manage your Data Models like used in FIWARE, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.</p>
 <p>You can know about JSON Schemas in  <a href="http://json-schema.org/">JSON Schema</a>.</p>
 <h3 id="importing-your-json-schema">Importing your JSON Schema</h3>
 <p>You  can import your JSON schema importing a JSON from a file or from a repository using the help of ocb-sender.</p>
@@ -210,14 +211,14 @@
     });
 </code></pre>
 
-<h4 id="importing-from-a-remote-repository">Importing From a remote repository</h4>
+<h4 id="importing-from-a-remote-repository">Importing from a remote repository</h4>
 <pre><code class="javascript">    var ngsi = require('ngsi-parser');
     ngsi.setModel({
         myRemoteSchema : 'https://yourdatamodels.com/myRemote'
     });
 </code></pre>
 
-<h4 id="importing-from-various-sources">Importing from various sources</h4>
+<h4 id="importing-several-schemas-from-different-sources">Importing several schemas from different sources</h4>
 <pre><code class="javascript">    var ngsi = require('ngsi-parser');
     var mySchema = require('mySchema.json');
     ngsi.setModel({
