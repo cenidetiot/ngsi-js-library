@@ -2,7 +2,8 @@
 
 ## Introduction
 
-The NGSI library for JavaScript is a software tool with the aim of transforming JSON entities to NGSI data models, which can be manipulated or operated by the FIWARE Orion Context Broker. This library can be implemented in  applications through RESTFul web services or backend, with the NodeJS execution environment.
+The NGSI library for JavaScript environment is a software tool with the aim of transforming JSON entities to NGSI data models, which can be manipulated or operated by the FIWARE Orion Context Broker. This library can be implemented in  applications through Node.js execution environment, such as RESTFul web services or backend.
+
 The NGSI JavaScript Library is composed of two npm modules:
 
 ### NGSI-parser module
@@ -13,7 +14,7 @@ NGSI-parser module analyzes the syntax of non-structured JSON objects to transfo
 
 ### OCB-sender module
 
-OCB-sender manipulates FIWARE-NGSIv2 objects with the aim of sending them to the FIWARE Orion Context Broker and, in this way make operations with them.
+OCB-sender manipulates FIWARE-NGSIv2 context entities with the aim of send them to the FIWARE Orion Context Broker and, in this way make operations with them.
 
 [ocb-sender repository](https://github.com/cenidetiot/ocb-sender)
 

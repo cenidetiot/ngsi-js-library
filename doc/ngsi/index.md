@@ -1,7 +1,5 @@
 # NGSI-parser
 
-## What is ngsi-parser?
-
 ngsi-parser is a npm module for parsing and converting a simple JSON or value to a NSGI-compliant object
 
 ----------

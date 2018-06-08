@@ -1,5 +1,6 @@
 # Schema Analizer
-ngsi-parser helps you to manage your Data Models like used in Fiware, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.
+W
+ngsi-parser helps you to manage your Data Models like used in FIWARE, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.
 
 You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
 
@@ -8,6 +9,7 @@ You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
 You  can import your JSON schema importing a JSON from a file or from a repository using the help of ocb-sender.
 
 #### Importing From a  JSON File
+
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var mySchema = require('mySchema.json');
@@ -15,14 +17,14 @@ You  can import your JSON schema importing a JSON from a file or from a reposito
 		mySchema : mySchema
 	});
 ```
-#### Importing From a remote repository
+#### Importing from a remote repository
 ```javascript
 	var ngsi = require('ngsi-parser');
 	ngsi.setModel({
 		myRemoteSchema : 'https://yourdatamodels.com/myRemote'
 	});
 ```
-#### Importing from various sources 
+#### Importing several schemas from different sources 
 
 ```javascript
 	var ngsi = require('ngsi-parser');
@@ -35,8 +37,8 @@ You  can import your JSON schema importing a JSON from a file or from a reposito
 	});
 ```
 
-
 ### Using your Data Models Schemas 
+
 To use the schemas imported from a JSON file only you need to specify the name with which you entered it to ngsi-parser and it will return you one array with the errors found.
 ```javascript
 	var ngsi = require('ngsi-parser');
