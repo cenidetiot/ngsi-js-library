@@ -41,3 +41,7 @@ In order to clone this repository its necessary execute **git clone --recursive 
     
     git clone --recursive https://github.com/cenidetiot/ngsi-js-library.git
 
+## Documentation Links:
+
+* [Read the docs] (http://ngsi-js-library.readthedocs.io/en/latest/)
+* [Github pages] (https://cenidetiot.github.io/ngsi-js-library/)
