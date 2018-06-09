@@ -16,6 +16,7 @@ ocb - sender is a npm module that handle a NGSI Object for them transportation t
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
+	* [Usage in Development of Mobile Apps] (docs/UsageInMobileApps.md)
 * [License](#license)
 
 ## How to install
