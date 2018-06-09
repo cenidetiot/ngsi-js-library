@@ -13,9 +13,9 @@ pages:
     - Entities Functions: ocb/docs/EntitiesFunctions.md
     - Query Functions: ocb/docs/QueryFunctions.md
     - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
-    - Usage in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
-  - Modules Usage:
-    - Examples of both npm module usage: modulesUsage/index.md
+    - Implementation in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
+  - Npm Modules Usage:
+    - Implementation examples of both npm modules: modulesUsage/index.md
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
