@@ -12,6 +12,7 @@ ngsi-parser is a npm module for parsing and converting a simple JSON or value to
 * [Module Usage](#module-usage)
 	* [Entities Functions](docs/EntitiesFunctions.md)
 	* [Context Queries](docs/ContextQueries.md)
+	* [Schema Analizer](docs/SchemaAnalizer.md)
 * [License](#license)
 
 ## Data types suported

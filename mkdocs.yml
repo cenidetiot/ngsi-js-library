@@ -13,6 +13,7 @@ pages:
     - Entities Functions: ocb/docs/EntitiesFunctions.md
     - Query Functions: ocb/docs/QueryFunctions.md
     - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
+    - Usage in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
   - Modules Usage:
     - Examples of both npm module usage: modulesUsage/index.md
 theme: readthedocs
