@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Generate Context Queries - NGSI-JS Library</title>
+  <title>Usage in the Development of Mobile Apps - NGSI-JS Library</title>
   
 
   <link rel="shortcut icon" href="../../../img/favicon.ico">
@@ -21,7 +21,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Generate Context Queries";
+    var mkdocs_page_name = "Usage in the Development of Mobile Apps";
   </script>
   
   <script src="../../../js/jquery-2.1.1.min.js"></script>
@@ -64,39 +64,28 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../">Introduction</a>
+        <a class="" href="../../../ngsi/">Introduction</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../EntitiesFunctions/">Entities Functions</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Generate Context Queries</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#context-queries">Context Queries</a></li>
-                
-                    <li><a class="toctree-l4" href="#index-navigation">Indéx navigation</a></li>
-                
-                    <li><a class="toctree-l4" href="#context-queries_1">Context Queries</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../../ngsi/docs/EntitiesFunctions/">Entities Functions</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../SchemaAnalizer/">Data Model JSON Schema Analizer</a>
+        <a class="" href="../../../ngsi/docs/ContextQueries/">Generate Context Queries</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../../ngsi/docs/SchemaAnalizer/">Data Model JSON Schema Analizer</a>
         
     </li>
 
@@ -111,35 +100,44 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../../ocb/">Introduction</a>
+        <a class="" href="../../">Introduction</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../../ocb/docs/EntitiesFunctions/">Entities Functions</a>
+        <a class="" href="../EntitiesFunctions/">Entities Functions</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../../ocb/docs/QueryFunctions/">Query Functions</a>
+        <a class="" href="../QueryFunctions/">Query Functions</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../../ocb/docs/SubscriptionsFunctions/">Suscriptions Functions</a>
+        <a class="" href="../SubscriptionsFunctions/">Suscriptions Functions</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../../ocb/docs/UsageInMobileApps/">Usage in the Development of Mobile Apps</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Usage in the Development of Mobile Apps</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#ocb-sender-usage-in-development-of-mobile-apps">OCB-sender usage in Development of Mobile Apps</a></li>
+                
+                    <li><a class="toctree-l4" href="#example">Example</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -184,11 +182,11 @@
     
       
         
-          <li>ngsi-parser &raquo;</li>
+          <li>ocb-sender &raquo;</li>
         
       
     
-    <li>Generate Context Queries</li>
+    <li>Usage in the Development of Mobile Apps</li>
     <li class="wy-breadcrumbs-aside">
       
         
@@ -202,36 +200,15 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="context-queries">Context Queries</h1>
-<h2 id="index-navigation">Indéx navigation</h2>
-<ul>
-<li><a href="#context-queries">Context Queries</a><ul>
-<li><a href="#generate-dinamic-query-in-string-format">Generate Dinamic Query in String Format</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="context-queries_1">Context Queries</h2>
-<h3 id="generate-dinamic-query-in-string-format">Generate Dinamic Query in String Format</h3>
-<pre><code class="js">    //Convert a Json to Query
-    let query = ngsi.createQuery({
-    &quot;id&quot;:&quot;Device.*&quot;,
-    &quot;type&quot;:&quot;Device&quot;,
-    &quot;options&quot;:&quot;keyValues&quot;,
-    &quot;dateObserved&quot; : &quot;&gt;=2018-02-20T16:54:03.931-06:00&quot;
-    })
-    console.log(query)
+                <h1 id="ocb-sender-usage-in-development-of-mobile-apps">OCB-sender usage in Development of Mobile Apps</h1>
+<p>The usage  of ocb-sender npm module in the development of mobile apps involve a little change in the code of the module. Once you have download the ocb-sender npm module inside in your project, you should to redirect to the node_modules folder an then, inside of this folder, search the folder of the ocb-sender package. When you have located this folder, search inside of this one the lib folder. </p>
+<p>In the lib folder of ocb-sender package is located the file OCB.js, open the file and comment the following line:</p>
+<pre><code class="js">    var fetch = require('node-fetch');
 </code></pre>
 
-<p>Output</p>
-<pre><code class="text">    ?id=Device.*&amp;Device&amp;type=Device&amp;options=keyValues&amp;q=dateObserved&gt;=2018-02-20T16:54:03.931-06:00
-</code></pre>
-
-<p>Usage with OCB-sender</p>
-<pre><code class="js">    //Send requests to ContextBroker
-    cb.getWithQuery(query)
-    .then((result) =&gt; console.log(result))
-    .catch((err) =&gt; console.log(err))
-</code></pre>
+<h2 id="example">Example</h2>
+<p><img alt="OCB-sender usage in Mobile Apps" src="../../../images/ocb-senderUsageMA.png" /></p>
+<p>In the Future, this issue in ocb-sender npm package it could be improved, detecting the operative system where was installed this module. And in this way, the user would not have to do these changes in the OCB.js file.</p>
               
             </div>
           </div>
@@ -239,10 +216,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../SchemaAnalizer/" class="btn btn-neutral float-right" title="Data Model JSON Schema Analizer"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../../modulesUsage/" class="btn btn-neutral float-right" title="Examples of both npm module usage"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../EntitiesFunctions/" class="btn btn-neutral" title="Entities Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../SubscriptionsFunctions/" class="btn btn-neutral" title="Suscriptions Functions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -270,10 +247,10 @@
           <a class="icon icon-github" style="float: left; color: #fcfcfc"> GitHub</a>
       
       
-        <span><a href="../EntitiesFunctions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../SubscriptionsFunctions/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../SchemaAnalizer/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../../modulesUsage/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

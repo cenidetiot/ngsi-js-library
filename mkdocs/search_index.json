@@ -22,7 +22,7 @@
         },
         {
             "location": "/ngsi/",
-            "text": "NGSI-parser\n\n\nngsi-parser is a npm module for parsing and converting a simple JSON or value to a NSGI-compliant object\n\n\n\n\nIndex navigation\n\n\n\n\nData type suported\n\n\nHow to Install\n\n\nImport npm module\n\n\nModule Usage\n\n\nEntities Functions\n\n\nContext Queries\n\n\n\n\n\n\nLicense\n\n\n\n\nData types suported\n\n\nIf value is a \nstring\n, then type \nText\n is used.\nIf value is a \nnumber\n, then type \nNumber\n is used.\nIf value is a \nboolean\n, then type \nBoolean\n is used.\nIf value is \nDate\n, then \nDateTime\n is used.\nIf value is an \nobject\n or \narray\n, then \nStructuredValue\n is used.\nIf value is \nnull\n, then \nNone\n is used.\n\n\nHow to Install\n\n\nnpm install ngsi-parser\n\nor\n\nyarn add ngsi-parser\n\n\n\nImport npm module\n\n\nES5\n\n\n    var ngsi = require('ngsi-parser')\n\n\n\n\nES6\n\n\n    import NGSI as ngsi from 'ngsi-parser'\n\n\n\n\nLicense\n\n\nMIT",
+            "text": "NGSI-parser\n\n\nngsi-parser is a npm module for parsing and converting a simple JSON or value to a NSGI-compliant object\n\n\n\n\nIndex navigation\n\n\n\n\nData type suported\n\n\nHow to Install\n\n\nImport npm module\n\n\nModule Usage\n\n\nEntities Functions\n\n\nContext Queries\n\n\nSchema Analizer\n\n\n\n\n\n\nLicense\n\n\n\n\nData types suported\n\n\nIf value is a \nstring\n, then type \nText\n is used.\nIf value is a \nnumber\n, then type \nNumber\n is used.\nIf value is a \nboolean\n, then type \nBoolean\n is used.\nIf value is \nDate\n, then \nDateTime\n is used.\nIf value is an \nobject\n or \narray\n, then \nStructuredValue\n is used.\nIf value is \nnull\n, then \nNone\n is used.\n\n\nHow to Install\n\n\nnpm install ngsi-parser\n\nor\n\nyarn add ngsi-parser\n\n\n\nImport npm module\n\n\nES5\n\n\n    var ngsi = require('ngsi-parser')\n\n\n\n\nES6\n\n\n    import NGSI as ngsi from 'ngsi-parser'\n\n\n\n\nLicense\n\n\nMIT",
             "title": "Introduction"
         },
         {
@@ -32,7 +32,7 @@
         },
         {
             "location": "/ngsi/#index-navigation",
-            "text": "Data type suported  How to Install  Import npm module  Module Usage  Entities Functions  Context Queries    License",
+            "text": "Data type suported  How to Install  Import npm module  Module Usage  Entities Functions  Context Queries  Schema Analizer    License",
             "title": "Index navigation"
         },
         {
@@ -92,7 +92,7 @@
         },
         {
             "location": "/ocb/",
-            "text": "OCB - sender\n\n\nocb - sender is a npm module that handle a NGSI Object for them transportation to FIWARE Orion Context Broker. It makes possible send context information in easy way to the FIWARE Ecosystem.\n\n\n\n\nIndex navigation\n\n\n\n\nHow to Install\n\n\nImport npm module\n\n\nModule Usage\n\n\nGeneral Functions\n\n\nConnection configuration with Orion ContextBroker\n\n\nRetrieve Orion ContextBroker API Resources\n\n\nGet EntityType of ContextBroker\n\n\nGet EntitytTypes of ContextBroker\n\n\n\n\n\n\nSpecific Functions\n\n\nEntities Functions\n\n\nSubscriptions Functions\n\n\nQuery Functions\n\n\n\n\n\n\n[Usage in Development of Mobile Apps] (docs/UsageInMobileApps.md)\n\n\n\n\n\n\nLicense\n\n\n\n\nHow to install\n\n\nnpm install ocb-sender\n\n\n\n\nor\n\n\nyarn add ocb-sender\n\n\n\n\nImport npm module.\n\n\nES5\n\n\n    var cb = require('ocb-sender');\n\n\n\n\nES6\n\n\n    import OCB as cb from  ocb-sender;\n\n\n\n\nModule Usage\n\n\nConnection configuration with Orion ContextBroker.\n\n\n cb.config(urlContextBroker, port, version)\n .then((result) => console.log(result))\n .catch((err) => console.log(err))\n\n\n\n\n\n\nExample\n\n\n\n\ncb.config('http://207.249.127.149',1026,'v2')\n.then((result) => console.log(result))\n.catch((err) => console.log(err))\n\n\n\n\nRetrieve Orion ContextBroker API Resources.\n\n\n\n\nExample\n\n\n\n\ncb.retrieveAPIResources()\n.then((result) => console.log(result))\n.catch((err) console.log(err))\n\n\n\n\nGet EntityType of ContextBroker.\n\n\n\n\nExample\n\n\n\n\ncb.getEntityType(\"Device\")\n.then((result) => console.log(result))\n.catch((err) => console.log(err))\n\n\n\n\nGet EntityTypes of ContextBroker.\n\n\n\n\nExample\n\n\n\n\ncb.getEntityTypes()\n.then((result) => console.dir(result))\n.catch((err) => console.log(err))\n\n\n\n\nLicense\n\n\nMIT",
+            "text": "OCB - sender\n\n\nocb - sender is a npm module that handle a NGSI Object for them transportation to FIWARE Orion Context Broker. It makes possible send context information in easy way to the FIWARE Ecosystem.\n\n\n\n\nIndex navigation\n\n\n\n\nHow to Install\n\n\nImport npm module\n\n\nModule Usage\n\n\nGeneral Functions\n\n\nConnection configuration with Orion ContextBroker\n\n\nRetrieve Orion ContextBroker API Resources\n\n\nGet EntityType of ContextBroker\n\n\nGet EntitytTypes of ContextBroker\n\n\n\n\n\n\nSpecific Functions\n\n\nEntities Functions\n\n\nSubscriptions Functions\n\n\nQuery Functions\n\n\n\n\n\n\nUsage in Development of Mobile Apps\n\n\n\n\n\n\nLicense\n\n\n\n\nHow to install\n\n\nnpm install ocb-sender\n\n\n\n\nor\n\n\nyarn add ocb-sender\n\n\n\n\nImport npm module.\n\n\nES5\n\n\n    var cb = require('ocb-sender');\n\n\n\n\nES6\n\n\n    import OCB as cb from  ocb-sender;\n\n\n\n\nModule Usage\n\n\nConnection configuration with Orion ContextBroker.\n\n\n cb.config(urlContextBroker, port, version)\n .then((result) => console.log(result))\n .catch((err) => console.log(err))\n\n\n\n\n\n\nExample\n\n\n\n\ncb.config('http://207.249.127.149',1026,'v2')\n.then((result) => console.log(result))\n.catch((err) => console.log(err))\n\n\n\n\nRetrieve Orion ContextBroker API Resources.\n\n\n\n\nExample\n\n\n\n\ncb.retrieveAPIResources()\n.then((result) => console.log(result))\n.catch((err) console.log(err))\n\n\n\n\nGet EntityType of ContextBroker.\n\n\n\n\nExample\n\n\n\n\ncb.getEntityType(\"Device\")\n.then((result) => console.log(result))\n.catch((err) => console.log(err))\n\n\n\n\nGet EntityTypes of ContextBroker.\n\n\n\n\nExample\n\n\n\n\ncb.getEntityTypes()\n.then((result) => console.dir(result))\n.catch((err) => console.log(err))\n\n\n\n\nLicense\n\n\nMIT",
             "title": "Introduction"
         },
         {
@@ -102,7 +102,7 @@
         },
         {
             "location": "/ocb/#index-navigation",
-            "text": "How to Install  Import npm module  Module Usage  General Functions  Connection configuration with Orion ContextBroker  Retrieve Orion ContextBroker API Resources  Get EntityType of ContextBroker  Get EntitytTypes of ContextBroker    Specific Functions  Entities Functions  Subscriptions Functions  Query Functions    [Usage in Development of Mobile Apps] (docs/UsageInMobileApps.md)    License",
+            "text": "How to Install  Import npm module  Module Usage  General Functions  Connection configuration with Orion ContextBroker  Retrieve Orion ContextBroker API Resources  Get EntityType of ContextBroker  Get EntitytTypes of ContextBroker    Specific Functions  Entities Functions  Subscriptions Functions  Query Functions    Usage in Development of Mobile Apps    License",
             "title": "Index navigation"
         },
         {
@@ -219,6 +219,21 @@
             "location": "/ocb/docs/SubscriptionsFunctions/#delete-subscription",
             "text": "Example   cb.deleteSubscription(\"5a93a9103fc4dec59e4ef8ec\")\n.then((result) => console.log(result))\n.catch((err) => console.log(err))",
             "title": "Delete Subscription."
+        },
+        {
+            "location": "/ocb/docs/UsageInMobileApps/",
+            "text": "OCB-sender usage in Development of Mobile Apps\n\n\nThe usage  of ocb-sender npm module in the development of mobile apps involve a little change in the code of the module. Once you have download the ocb-sender npm module inside in your project, you should to redirect to the node_modules folder an then, inside of this folder, search the folder of the ocb-sender package. When you have located this folder, search inside of this one the lib folder. \n\n\nIn the lib folder of ocb-sender package is located the file OCB.js, open the file and comment the following line:\n\n\n    var fetch = require('node-fetch');\n\n\n\n\nExample\n\n\n\n\nIn the Future, this issue in ocb-sender npm package it could be improved, detecting the operative system where was installed this module. And in this way, the user would not have to do these changes in the OCB.js file.",
+            "title": "Usage in the Development of Mobile Apps"
+        },
+        {
+            "location": "/ocb/docs/UsageInMobileApps/#ocb-sender-usage-in-development-of-mobile-apps",
+            "text": "The usage  of ocb-sender npm module in the development of mobile apps involve a little change in the code of the module. Once you have download the ocb-sender npm module inside in your project, you should to redirect to the node_modules folder an then, inside of this folder, search the folder of the ocb-sender package. When you have located this folder, search inside of this one the lib folder.   In the lib folder of ocb-sender package is located the file OCB.js, open the file and comment the following line:      var fetch = require('node-fetch');",
+            "title": "OCB-sender usage in Development of Mobile Apps"
+        },
+        {
+            "location": "/ocb/docs/UsageInMobileApps/#example",
+            "text": "In the Future, this issue in ocb-sender npm package it could be improved, detecting the operative system where was installed this module. And in this way, the user would not have to do these changes in the OCB.js file.",
+            "title": "Example"
         },
         {
             "location": "/modulesUsage/",
