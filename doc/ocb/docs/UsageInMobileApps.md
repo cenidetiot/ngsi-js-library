@@ -10,7 +10,7 @@ In the lib folder of ocb-sender package is located the file OCB.js, open the fil
 
 ## Example
 
-![OCB-sender usage in Mobile Apps](./../images/ocb-senderUsageMA.png)
+![OCB-sender usage in Mobile Apps](../../images/ocb-senderUsageMA.png)
 
 In the Future, this issue in ocb-sender npm package it could be improved, detecting the operative system where was installed this module. And in this way, the user would not have to do these changes in the OCB.js file.
 
