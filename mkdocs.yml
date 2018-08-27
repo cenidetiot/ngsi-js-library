@@ -13,7 +13,7 @@ pages:
     - 'JSON parser functions': 'ngsi/docs/EntitiesFunctions.md'
     - 'Queries Parser functions': 'ngsi/docs/ContextQueries.md'
     - 'Data Models Schemas Analyzer': 'ngsi/docs/SchemaAnalizer.md'
-    - 'OCB - sender module': 'ocb/index,md'
+    - 'OCB - sender module': 'ocb/index.md'
     - 'Entities Functions': 'ocb/docs/EntitiesFunctions.md'
     - 'Query Functions': 'ocb/docs/QueryFunctions.md'
     - 'Suscriptions Functions': 'ocb/docs/SubscriptionsFunctions.md'
