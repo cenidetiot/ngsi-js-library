@@ -3,23 +3,23 @@ site_description: Library NGSI
 docs_dir: doc/
 pages:
   - Home: index.md
-  - 'Getting Started': overview.md
-    - 'NGSI Javascript Library Overview': overview.md
-    - 'How it works the library': overview.md
-    - 'More information': overview.md
-  - 'User & Programmers Manual':  usersManual.md
-    - 'Introduction': usersManual.md
-    - 'NGSI - parser module': ngsi/index.md
-      - 'JSON parser functions': ngsi/docs/EntitiesFunctions.md
-      - 'Queries Parser functions': ngsi/docs/ContextQueries.md
-      - 'Data Models Schemas Analyzer': ngsi/docs/SchemaAnalizer.md
-    - 'OCB - sender module': ocb/index.md
-      - 'Entities Functions': ocb/docs/EntitiesFunctions.md
-      - 'Query Functions': ocb/docs/QueryFunctions.md
-      - 'Suscriptions Functions': ocb/docs/SubscriptionsFunctions.md
-      - 'Implementation in the Development of Mobile Apps': ocb/docs/UsageInMobileApps.md
+  - 'Getting Started': 
+    - 'NGSI Javascript Library Overview': 'overview.md'
+    - 'How it works the library': 'overview.md'
+    - 'More information': 'overview.md'
+  - 'User & Programmers Manual': 
+    - 'Introduction': 'usersManual.md'
+    - 'NGSI - parser module': 'ngsi/index.md'
+      - 'JSON parser functions': 'ngsi/docs/EntitiesFunctions.md'
+      - 'Queries Parser functions': 'ngsi/docs/ContextQueries.md'
+      - 'Data Models Schemas Analyzer': 'ngsi/docs/SchemaAnalizer.md'
+    - 'OCB - sender module': 
+      - 'Entities Functions': 'ocb/docs/EntitiesFunctions.md'
+      - 'Query Functions': 'ocb/docs/QueryFunctions.md'
+      - 'Suscriptions Functions': 'ocb/docs/SubscriptionsFunctions.md'
+      - 'Implementation in the Development of Mobile Apps': 'ocb/docs/UsageInMobileApps.md'
     - 'npm Modules Usage':
-      - 'Implementation examples of both npm modules': modulesUsage/index.md
+      - 'Implementation examples of both npm modules': 'modulesUsage/index.md'
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
