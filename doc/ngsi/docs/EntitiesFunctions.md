@@ -8,6 +8,7 @@
 
 To parse an attribute of an context entity it must be implemented the parseAttrs() function, which receives as parameter the JSON object corresponding to the attribute that wants to convert in a NGSI attribute.
 For parse and convert a JSON attribute two cases are presented:
+
 #### Case 1: JSON attribute without metadata 
 This case occurs when you want to convert a JSON attribute to a NGSI attribute, but this attribute has not metadata included inside of it. In this case must be specified the name of the attribute followed by its value.  
 Example:

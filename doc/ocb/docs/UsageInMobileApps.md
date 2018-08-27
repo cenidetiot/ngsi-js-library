@@ -1,4 +1,4 @@
-# OCB-sender usage in Development of Mobile Apps
+# OCB-sender - Mobile Apps Implementation
 
 The usage  of ocb-sender npm module in the development of mobile apps involve a little change in the code of the module. Once you have download the ocb-sender npm module inside in your project, you should to redirect to the node_modules folder an then, inside of this folder, search the folder of the ocb-sender package. When you have located this folder, search inside of this one the lib folder. 
 

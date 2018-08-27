@@ -17,8 +17,9 @@ pages:
     - 'Entities Functions': 'ocb/docs/EntitiesFunctions.md'
     - 'Query Functions': 'ocb/docs/QueryFunctions.md'
     - 'Suscriptions Functions': 'ocb/docs/SubscriptionsFunctions.md'
-    - 'Implementation in the Development of Mobile Apps': 'ocb/docs/UsageInMobileApps.md'
+    - 'OCB-sender - Mobile Apps Implementation': 'ocb/docs/UsageInMobileApps.md'
     - 'Implementation examples of both npm modules': 'modulesUsage/index.md'
+  - 'Installation & Administration Manual': 'adminManual.md'
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
