@@ -1,17 +1,15 @@
 # Subscriptions Functions
-***
-## Indéx navigation
-* [Subscriptions Functions](#subscriptions-functions)
-    * [Read Functions](#read-functions)
-	    * [Get All Subscriptions](#get-all-subscriptions)
-	    * [Get Subscription](#get-subscription)
-    * [Create Functions](#create-functions)
-	    * [Create Subscription](#create-subscription)
-    * [Update Functions](#update-functions)
-        * [Update Subscription](#update-subscription)
-        * [Update Subscription Status](#update-subscription-status)
-    * [Delete Functions](#dele-functions)
-	    * [Delete Subscription](#delete-subscription)
+
+* [Read Functions](#read-functions)
+	* [Get All Subscriptions](#get-all-subscriptions)
+	* [Get Subscription](#get-subscription)
+* [Create Functions](#create-functions)
+	* [Create Subscription](#create-subscription)
+* [Update Functions](#update-functions)
+    * [Update Subscription](#update-subscription)
+    * [Update Subscription Status](#update-subscription-status)
+* [Delete Functions](#dele-functions)
+	* [Delete Subscription](#delete-subscription)
 
 ## Read Functions.
 

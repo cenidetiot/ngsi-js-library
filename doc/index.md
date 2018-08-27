@@ -1,4 +1,4 @@
-# Welcome to NGSI Library JavaScript.
+# Welcome to NGSI Library JavaScript
 
 The NGSI library for JavaScript is a software tool with the aim of transforming JSON entities to NGSI data models, which can be manipulated or operated by the FIWARE Orion Context Broker. This library has been developed for its use in applications through RESTful web services or backend, with the Node.js execution environment; also this library can be used in the development of mobile applications with frameworks that uses JavaScript as language to develop Android or IOS native applications, such as React Native or Native Script.
 

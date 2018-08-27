@@ -7,7 +7,7 @@ pages:
   - 'User & Programmers Manual': 
     - 'Introduction': 'usersManual.md'
     - 'NGSI - parser module': 'ngsi/index.md'
-    - 'JSON parser functions': 'ngsi/docs/EntitiesFunctions.md'
+    - 'JSON Parser functions': 'ngsi/docs/EntitiesFunctions.md'
     - 'Queries Parser functions': 'ngsi/docs/ContextQueries.md'
     - 'Data Models Schemas Analyzer': 'ngsi/docs/SchemaAnalizer.md'
     - 'OCB - sender module': 'ocb/index.md'

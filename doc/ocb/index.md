@@ -13,7 +13,6 @@ ocb - sender is a npm module that makes possible the sending of context informat
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
 	* [Mobile Apps Implementation](docs/UsageInMobileApps.md)
-* [License](#license)
 
 ## Import the module in JavaScript Project
 To import an npm module in an existing JavaScript project there are two ways. This choice depends on the ECMAScript standard that used in the project.
@@ -41,21 +40,21 @@ By other side, if in the JavaScript file is used the ES6 standard can be directl
  .then((result) => console.log(result))
  .catch((err) => console.log(err))
 ```
-> Example
+Example
 ```js
 cb.config('http://207.249.127.149',1026,'v2')
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
 ### Retrieve Orion ContextBroker API Resources.
-> Example
+Example
 ```js
 cb.retrieveAPIResources()
 .then((result) => console.log(result))
 .catch((err) console.log(err))
 ```
 ### Get EntityType of ContextBroker.
-> Example
+Example
 ```js
 cb.getEntityType("Device")
 .then((result) => console.log(result))
