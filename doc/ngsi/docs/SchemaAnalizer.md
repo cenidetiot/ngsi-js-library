@@ -1,15 +1,31 @@
-# Schema Analizer
-W
-ngsi-parser helps you to manage your Data Models like used in FIWARE, ngsi-parser can analize if the entity complies with the specified model and identify its errors, to do it you need the JSON Schema of this Data Model provided or you can build some.
+# Data Models Schemas Analyzer.
 
+ngsi-parser module helps you to manage Data Models like used in FIWARE. ngsi-parser can analyze if an context entity complies with the specification of a data model and, in case of not, identify its errors. In order to do this, the Schema Analyzer of ngsi-parser needs the JSON Schema of the Data Model with which will analyze the context entity and, like this way determinate if the context entity complies with the specification provided by JSON Schema. The official specification in form of JSON Schema of each one data models can be located in the repository “dataModels” of the SmartSDK Github account.
 You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
 
-### Importing your JSON Schema
+* [Importing JSON Schemas](#generate-dinamic-query-in-string-format)
+	* [Importing a JSON Schema from a remote repository]()
+	* [Importing a JSON Schema from an external JSON file]()
+	* [Importing several schemas from different resources]()
+* [Use the data model schemas for verify the structure of a data model](#usage-with-ocb-sender)
+	* [Verifying a data model without storing the JSON Schema]()
+* [Real Example Case]()
 
-You  can import your JSON schema importing a JSON from a file or from a repository using the help of ocb-sender.
+## Importing JSON Schemas.
+In ngsi-parser there are two ways to import your JSON schema, from an external file or from a remote repository.
 
-#### Importing From a  JSON File
-
+### Importing a JSON Schema from a remote repository.
+To import a JSON schema from a remote repository this must be specified with the URL inside of setModel() function.
+Example:
+```javascript
+	var ngsi = require('ngsi-parser');
+	ngsi.setModel({
+		myRemoteSchema : 'https://yourdatamodels.com/myRemote'
+	});
+```
+### Importing a JSON Schema from an external JSON File.
+To import a JSON Schema from a file, the name of JSON file must be specified in the JavaScript file with the method require and save it in a variable, and after that implement it  with the setModel() function.
+Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var mySchema = require('mySchema.json');
@@ -17,15 +33,9 @@ You  can import your JSON schema importing a JSON from a file or from a reposito
 		mySchema : mySchema
 	});
 ```
-#### Importing from a remote repository
-```javascript
-	var ngsi = require('ngsi-parser');
-	ngsi.setModel({
-		myRemoteSchema : 'https://yourdatamodels.com/myRemote'
-	});
-```
-#### Importing several schemas from different sources 
-
+### Importing several schemas from different sources 
+Of course it could be necessary import several schemas form a different resources (either a JSON file or from a remote repository), the setModel() function allows to manage the schemas saved in attributes of the JSON that receives as parameter the same function.
+Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var mySchema = require('mySchema.json');
@@ -38,8 +48,7 @@ You  can import your JSON schema importing a JSON from a file or from a reposito
 ```
 
 ### Using your Data Models Schemas 
-
-To use the schemas imported from a JSON file only you need to specify the name with which you entered it to ngsi-parser and it will return you one array with the errors found.
+To verify a data model with a JSON schemas imported from a JSON file, you need to specify the name with which was imported and include this name in the setModel() function as a JSON parameter. Then, the function verifyModel() will return one array with the errors found in the context entity, if was the case. To do this, the function verifyModel() receives as parameters the JSON schema and the context entity to compare. One example is the following:
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var mySchema = require('mySchema.json');
@@ -59,7 +68,7 @@ To use the schemas imported from a JSON file only you need to specify the name w
 		errors.map(console.log)
 	}
 ```
-To use Schemas from a remote repository is necesary download it, is because you need use ocb-sender, and in this case the method ngsi.verifyModel() becomes to a promise.
+To verify a data model with a remote schema, is necessary specify the ocb-sender object as parameter of the verifyModel() function; in this case the method verifyModel() becomes to a promise.
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var ocb = require('ocb-sender');
@@ -81,7 +90,9 @@ To use Schemas from a remote repository is necesary download it, is because you 
 		}
 	})
 ```
-#### Use without storing the JSON schema 
+#### Verifying a data model without storing the JSON schema. 
+To verify a data model with a JSON schema extracted from remote repository, without storing it in a variable, the URL of this schema it can be included directly as a parameter of the verifyModel() function, including in this same function, the entity/data model to verify and the ocb-sender object.
+Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var ocb = require('ocb-sender');
@@ -95,7 +106,8 @@ To use Schemas from a remote repository is necesary download it, is because you 
 	})
 ```
 ### Real Example Case 
-The Alert Schema imported from [Fiware Data Models Repository](https://github.com/Fiware/dataModels)  in this [Link](https://fiware.github.io/dataModels/Alert/schema.json).
+This is the JSON Schema of the Alert data model, imported from [SmartSDK Data Models Repository]
+(https://github.com/smartsdk/dataModels) in this [link](https://github.com/smartsdk/dataModels/blob/master/Alert/schema.json).
 ```json
 {
 	"$schema": "http://json-schema.org/schema#",
@@ -232,6 +244,8 @@ The Alert Schema imported from [Fiware Data Models Repository](https://github.co
 	]
 }
 ```
+Initially in a JavaScript project they are imported both modules of the NGSI library. In the setModel() function is specified the JSON schema from a remote repository,  in this case the schema of the Alert data model. After this, in a variable is stored the entity/data model given by the user/device (context producer) and in the verifyModel() they are defined: the Alert schema, the alert entity to verify and the ocb-sender object (used for download the schema provided with the URL of the schema).
+Example:
 ```javascript 
 var ngsi = require('ngsi-parser');
 var ocb = require('ocb-sender');

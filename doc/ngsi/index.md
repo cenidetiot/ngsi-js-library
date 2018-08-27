@@ -1,49 +1,49 @@
-# NGSI-parser
+# NGSI-parser module.
 
-ngsi-parser is a npm module for parsing and converting a simple JSON or value to a NSGI-compliant object
+ngsi-parser is an npm module for analyzing and converting simples JSON (objects or values) into an NSGI object, that represents a well-defined context entity or data model. 
 
 ----------
 
-## Index navigation
-
-* [Data type suported](#usage)
-* [How to Install](#how-to-install)
-* [Import npm module](#import-npm-module)
-* [Module Usage](#module-usage)
-	* [Entities Functions](docs/EntitiesFunctions.md)
-	* [Context Queries](docs/ContextQueries.md)
-	* [Schema Analizer](docs/SchemaAnalizer.md)
-* [License](#license)
+* [Data type suported](#data-type-supported)
+* [Import the module in a Javascript Project](#import-the-module-in-a-javascript-project)
+* [Modules Usage](#modules-usage)
 
 ## Data types suported
+The ngsi-parser module supports the attributes types described in the NGSI specification. For more information about the NGSI Attribute’s types please refer to the Specification section in the NGSI API documentation. 
+The table below shows the relation between the attributes types commonly used for manipulating data and its corresponding equivalent in the NGSI attribute types; this relation depends of the value type used for the attribute.
+Common Data Types | NGSI Data Types | 
+------------ | -------------
+String |  Text
+Float  |  Number
+Integer  |  Number
+Boolean  |  Boolean
+Date  |  DateTime
+Object  |  StructuredValue
+Array  |  StructuredValue
+Null  |  None
 
-If value is a **string**, then type **Text** is used.
-If value is a **number**, then type **Number** is used.
-If value is a **boolean**, then type **Boolean** is used.
-If value is **Date**, then **DateTime** is used.
-If value is an **object** or **array**, then **StructuredValue** is used.
-If value is **null**, then **None** is used.
+For the special type attributes described in the NGSI specification, such as: geo:point, geo:line, geo:polygon and geo:box, each one of these must be specified as the value type  of the attribute in the entity  definition.
 
-## How to Install
+## Import the module in a Javascript Project
+To import an npm module in an existing JavaScript project there are two ways. This choice depends on the ECMAScript standard that used in the project.
 
-    npm install ngsi-parser 
-    
-   	or
-   
-	yarn add ngsi-parser
+#### ES5 (ECMAScript 5)
+For import the module in the JavaScript file that uses the ES5 standard, write the following line to call the module: 
 
-### Import npm module
-
-#### ES5 
 ```js
 	var ngsi = require('ngsi-parser')
 ```
+#### ES6 (ECMAScript 6)
+By other side, if in the JavaScript file is used the ES6 standard can be directly used the common import sentence for call the module:
 
-#### ES6 
 ```js
 	import NGSI as ngsi from 'ngsi-parser'
 ```
 
-#### License 
+## Modules Usage
+The implementation of the ngsi-parser module be composed by the elements described in the architecture of the library. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer.
+* [JSON Parser Functions](docs/EntitiesFunctions.md)
+* [Queries Parser Functions](docs/ContextQueries.md)
+* [Data Models Schema Analyzer](docs/SchemaAnalizer.md)
 
-MIT 
+

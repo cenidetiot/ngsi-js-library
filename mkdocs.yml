@@ -3,19 +3,26 @@ site_description: Library NGSI
 docs_dir: doc/
 pages:
   - Home: index.md
-  - ngsi-parser: 
-    - Introduction: ngsi/index.md
-    - Entities Functions: ngsi/docs/EntitiesFunctions.md
-    - Generate Context Queries: ngsi/docs/ContextQueries.md
-    - Data Model JSON Schema Analizer: ngsi/docs/SchemaAnalizer.md
-  - ocb-sender:
-    - Introduction: ocb/index.md
-    - Entities Functions: ocb/docs/EntitiesFunctions.md
-    - Query Functions: ocb/docs/QueryFunctions.md
-    - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
-    - Implementation in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
-  - Npm Modules Usage:
-    - Implementation examples of both npm modules: modulesUsage/index.md
+  - Getting Started: overview.md
+    - NGSI Javascript Library Overview: overview.md
+    - How it works the library: overview.md
+    - More information: overview.md
+  - User & Programmers Manual:  usersManual.md
+    - Introduction: usersManual.md
+    - NGSI - parser module: ngsi/index.md
+      - JSON parser functions: ngsi/docs/EntitiesFunctions.md
+      - Queries Parser functions: ngsi/docs/ContextQueries.md
+      - Data Models Schemas Analyzer: ngsi/docs/SchemaAnalizer.md
+    - OCB - sender module: ocb/index.md
+      - Entities Functions: ocb/docs/EntitiesFunctions.md
+      - Query Functions: ocb/docs/QueryFunctions.md
+      - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
+      - Implementation in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
+    - npm Modules Usage:
+      - Implementation examples of both npm modules: modulesUsage/index.md
+  - Installation & Administration Manual: 
+      - Pre-requirements of Installation: 
+      - NGSI JavaScript Library Installation:
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]

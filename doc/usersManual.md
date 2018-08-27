@@ -1,0 +1,2 @@
+# Introduction.
+Welcome to the User & Programmers Manual of the NGSI Library. Any feedback about the implementation and usage of the library or contributions are welcome, including bug reports or proposals of functionalities that actually are not included in the library. These and other relevant comments please provide us via GitHub in the repository of the Library, in issues or pull request form.
