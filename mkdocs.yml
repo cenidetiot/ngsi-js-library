@@ -20,9 +20,6 @@ pages:
       - Implementation in the Development of Mobile Apps: ocb/docs/UsageInMobileApps.md
     - npm Modules Usage:
       - Implementation examples of both npm modules: modulesUsage/index.md
-  - Installation & Administration Manual: 
-      - Pre-requirements of Installation: 
-      - NGSI JavaScript Library Installation:
 theme: readthedocs
 markdown_extensions: [toc,fenced_code]
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
