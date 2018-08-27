@@ -1,5 +1,5 @@
 
-# NGSI JavaScript Library Overview
+# Introduction
 
 Welcome to the quick start guide of NGSI JavaScript Library! In this brief chapter, you will find general information to help you understand the way that the library is conformed and how it works.
 The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. The specification that is intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 

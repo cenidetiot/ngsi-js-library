@@ -3,10 +3,7 @@ site_description: Library NGSI
 docs_dir: doc/
 pages:
   - Home: index.md
-  - 'Getting Started': 
-    - 'NGSI Javascript Library Overview': 'overview.md'
-    - 'How it works the library': 'overview.md'
-    - 'More information': 'overview.md'
+  - Getting Started: overview.md
   - 'User & Programmers Manual': 
     - 'Introduction': 'usersManual.md'
     - 'NGSI - parser module': 'ngsi/index.md'
