@@ -9,7 +9,7 @@ pages:
     - 'More information': 'overview.md'
   - 'User & Programmers Manual': 
     - 'Introduction': 'usersManual.md'
-    - 'NGSI - parser module': 'ngsi/index.md'
+    - 'NGSI - parser module': 
       - 'JSON parser functions': 'ngsi/docs/EntitiesFunctions.md'
       - 'Queries Parser functions': 'ngsi/docs/ContextQueries.md'
       - 'Data Models Schemas Analyzer': 'ngsi/docs/SchemaAnalizer.md'
