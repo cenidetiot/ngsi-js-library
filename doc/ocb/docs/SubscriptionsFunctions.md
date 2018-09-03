@@ -14,24 +14,23 @@
 ## Read Functions.
 
 ### Get Subscriptions.
-> Example
+Example
 ```js
 cb.listSubscriptions()
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
 ### Get Subscription.
-> Example
+Example
 ```js
 cb.getSubscription("5a83c5463fc4dec59e4ef8e2")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-
 ## Create Functions.
 
 ### Create Subscription.
-> Example
+Example
 ```js
 cb.createSubscription({
 	"description": "Alert subscription TEST",
@@ -90,7 +89,7 @@ cb.createSubscription({
 ## Update Functions.
 
 ### Update Subscription
-> Example
+Example
 ```js
 cb.updateSubscription("5a93a9063fc4dec59e4ef8eb", {
 	"description": "Alert subscription TEST",
@@ -141,7 +140,7 @@ cb.updateSubscription("5a93a9063fc4dec59e4ef8eb", {
 .catch((err) => console.log(err))
 ```
 ### Update Subscription Status.
-> Example
+Example
 ```js
 cb.updateSubscriptionStatus("5a81e50a3fc4dec59e4ef8dc", "active")
 .then((result) => console.log(result))
@@ -151,7 +150,7 @@ cb.updateSubscriptionStatus("5a81e50a3fc4dec59e4ef8dc", "active")
 ## Delete Functions.
 
 ##Delete Subscription.
-> Example
+Example
 ```js
 cb.deleteSubscription("5a93a9103fc4dec59e4ef8ec")
 .then((result) => console.log(result))

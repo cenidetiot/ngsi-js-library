@@ -1,4 +1,4 @@
-# NGSI-parser module.
+# NGSI-parser module
 
 ngsi-parser is an npm module for analyzing and converting simples JSON (objects or values) into an NSGI object, that represents a well-defined context entity or data model. 
 
@@ -41,8 +41,8 @@ By other side, if in the JavaScript file is used the ES6 standard can be directl
 	import NGSI as ngsi from 'ngsi-parser'
 ```
 
-## Modules Usage
-The implementation of the ngsi-parser module be composed by the elements described in the architecture of the library. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer.
+## Module Usage
+The ngsi-parser module be composed by the elements described in the architecture of the library section. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer, which are explained in more detail in the following sections.
 
 * [JSON Parser Functions](docs/EntitiesFunctions.md)
 * [Queries Parser Functions](docs/ContextQueries.md)

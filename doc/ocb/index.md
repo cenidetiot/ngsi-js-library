@@ -1,20 +1,20 @@
-# OCB - sender  
+# OCB - sender module
 ocb - sender is a npm module that makes possible the sending of context information produced by the context producers, in easy way to the FIWARE Ecosystem. This module allows the manipulation of NGSIv2 entities for them transportation to the FIWARE Orion Context Broker, through CRUD operations, in order to send the updates of NGSI context entities to the Orion Context Broker.
 
-* [Import the module in a JavaScript Project](#import-npm-module)
+* [Import the module in a JavaScript Project](#import-the-module)
 * [Module Usage](#module-usage)
-	* [General Functionalities](#general-functions)
-		* [Connection configuration with Orion ContextBroker](#connection-configuration-with-orion-contextbroker)
+	* [General Functions](#general-functions)
+		* [Connection configuration with an Orion ContextBroker Instance](#connection-configuration-with-orion-contextbroker)
 		* [Retrieve Orion ContextBroker API Resources](#retrieve-orion-contextbroker-api-resources)
 		* [Get EntityType of ContextBroker](#get-entitytype-of-contextbroker)
 		* [Get EntitytTypes of ContextBroker](#get-entitytypes-of-contextbroker)
-	* [Specific Functionalities](#specific-functions)
+	* [Functions grouped by block]
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
 	* [Mobile Apps Implementation](docs/UsageInMobileApps.md)
 
-## Import the module in JavaScript Project
+## Import the module in a JavaScript Project
 To import an npm module in an existing JavaScript project there are two ways. This choice depends on the ECMAScript standard that used in the project.
 
 #### ES5 (ECMAScript 5)
@@ -32,47 +32,43 @@ By other side, if in the JavaScript file is used the ES6 standard can be directl
 ```
 
 ## Module Usage
+The ocb-sender module is composed by the elements described in the architecture of the library section. These elements are: the entities functions block, the queries functions block, and the subscriptions functions block, which are explained in more detail in the following sections. In addition to the specific functionalities of each block, the ocb-sender module considers general functions for the connection with an Orion ContextBroker instance and retrieving of API resources, as well as the getting of groups of entities grouped by type and types of entities.
 
-### Connection configuration with Orion ContextBroker.
+### General Functions.
+
+#### Connection configuration with an Orion ContextBroker Instance.
 
 ```js
- cb.config(urlContextBroker, port, version)
+cb.config(urlContextBroker, headers)
  .then((result) => console.log(result))
  .catch((err) => console.log(err))
 ```
 Example
 ```js
-cb.config('http://207.249.127.149',1026,'v2')
+cb.config('http://207.249.127.149:1026/v2/', headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Retrieve Orion ContextBroker API Resources.
+#### Retrieve Orion ContextBroker API Resources.
 Example
 ```js
 cb.retrieveAPIResources()
 .then((result) => console.log(result))
 .catch((err) console.log(err))
 ```
-### Get EntityType of ContextBroker.
+#### Get EntityType of ContextBroker.
 Example
 ```js
 cb.getEntityType("Device")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-
-### Get EntityTypes of ContextBroker.
-
-> Example
+#### Get EntityTypes of ContextBroker.
+Example
 ```js
 cb.getEntityTypes()
 .then((result) => console.dir(result))
 .catch((err) => console.log(err))
 ```
-
-## License
-
-MIT 
-
 
 
