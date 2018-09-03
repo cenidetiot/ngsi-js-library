@@ -10,7 +10,7 @@ ngsi-parser is an npm module for analyzing and converting simples JSON (objects 
 The ngsi-parser module supports the attributes types described in the NGSI specification. For more information about the NGSI Attribute’s types please refer to the Specification section in the NGSI API documentation. 
 The table below shows the relation between the attributes types commonly used for manipulating data and its corresponding equivalent in the NGSI attribute types; this relation depends of the value type used for the attribute.
 
-Data Types Supported Table
+**Data Types Supported Table.**
 
 |Common Data Types | NGSI Data Types | 
 |------------ | -------------
