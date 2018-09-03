@@ -25,6 +25,7 @@ The main objective of ocb-sender module is manipulate the context information of
 
 ## More Information
 This is a small introduction of the NGSI Library, if you learn more about the library consult to following sections:
+
 - Refer to the Installation & Administration Manual to learn more about installing the modules of the library and getting them running.
 - Refer to the User & Programmers Manual to learn more about the functionalities that offers each one of the library modules and how make operations in conjunction with both modules.
 - If exists doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/)
