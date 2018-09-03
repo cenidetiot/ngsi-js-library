@@ -3,7 +3,7 @@
 
 Welcome to the quick start guide of NGSI JavaScript Library! In this brief chapter, you will find general information to help you understand the way that the library is conformed and how it works.
 The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. The specification that is intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
-The NGSI Library is composed of two npm modules; i.e node packages that can be found in the [official site of npm](https://www.npmjs.com/)
+The NGSI Library is composed of two npm modules; i.e node packages that can be found in the [official site of npm](https://www.npmjs.com/).
 
 ### NGSI-parser module
 The NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv2 entities, through treatment of the context entity or data model given by a context producer and following the guidelines of the official specification of the NGSIv2. In addition, this module provide functionalities to verify the structure of the entities to check if this fulfills with the specification of an official data model of FIWARE.
@@ -28,6 +28,7 @@ The ngsi-parser contains three basic elements to perform the analysis of the JSO
 
 ### ocb-sender module
 The main objective of ocb-sender module is manipulate the context information of NGSI context entities and/or FIWARE data models, in order to send this information to an instance of the Orion Context Broker. The ocb-sender module is composed by four elements, first three elements are the client functionalities of the Orion Context Broker and the last one is the HTTP - Client encapsulated as communication channel for the connection with the Orion Context Broker. This four components are the following: 
+
 - a) an Entities Functions block, that implements the functions to manipulate the entities of the Orion Context Broker. 
 - b) a Queries Functions block, that considers the functions for personalized queries to the Orion Context Broker.
 - c) a Subscriptions Functions block, that implement the functions to manipulate the subscriptions of the Orion Context Broker.
@@ -38,4 +39,4 @@ This is a small introduction of the NGSI Library, if you learn more about the li
 
 - Refer to the Installation & Administration Manual to learn more about installing the modules of the library and getting them running.
 - Refer to the User & Programmers Manual to learn more about the functionalities that offers each one of the library modules and how make operations in conjunction with both modules.
-- If exists doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/)
+- If exists doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/).

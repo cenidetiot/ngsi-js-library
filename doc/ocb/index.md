@@ -4,11 +4,11 @@ ocb - sender is a npm module that makes possible the sending of context informat
 * [Import the module in a JavaScript Project](#import-the-module)
 * [Module Usage](#module-usage)
 	* [General Functions](#general-functions)
-		* [Connection configuration with an Orion ContextBroker Instance](#connection-configuration-with-orion-contextbroker)
+		* [Connection configuration with an Orion ContextBroker Instance](#connection-configuration-with-an-orion-contextbroker-instance)
 		* [Retrieve Orion ContextBroker API Resources](#retrieve-orion-contextbroker-api-resources)
 		* [Get EntityType of ContextBroker](#get-entitytype-of-contextbroker)
 		* [Get EntitytTypes of ContextBroker](#get-entitytypes-of-contextbroker)
-	* [Functions grouped by block]
+	* [Specific Functionalities](#specific-functionalities)
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
