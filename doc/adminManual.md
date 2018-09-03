@@ -17,7 +17,7 @@ To verify the current version of Node and npm, execute the following commands in
 
 ## NGSI - parser module installation
 
-   npm install ngsi-parser 
+    npm install ngsi-parser 
     
    or
    
