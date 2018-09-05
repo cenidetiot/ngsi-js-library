@@ -13,6 +13,7 @@ cb.getWithQuery(query)
 .catch((err) => console.log(err))
 ```
 ### Query Entities on Area.
+***NOTE***: For this function the use of headers is not available.
 Usage
 ```js
 cb.queryEntitiesOnArea(coordsPolygon, idEntity, entityType, optionskeyValues)

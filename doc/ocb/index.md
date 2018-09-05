@@ -9,6 +9,7 @@ ocb - sender is a npm module that makes possible the sending of context informat
 		* [Get EntityType of ContextBroker](#get-entitytype-of-contextbroker)
 		* [Get EntitytTypes of ContextBroker](#get-entitytypes-of-contextbroker)
 	* [Specific Functionalities](#specific-functionalities)
+		* [Headers support](#headers-support)
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
