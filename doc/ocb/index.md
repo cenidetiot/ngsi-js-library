@@ -34,10 +34,25 @@ By other side, if in the JavaScript file is used the ES6 standard can be directl
 ## Module Usage
 The ocb-sender module is composed by the elements described in the architecture of the library section. These elements are: the entities functions block, the queries functions block, and the subscriptions functions block, which are explained in more detail in the following sections. In addition to the specific functionalities of each block, the ocb-sender module considers general functions for the connection with an Orion ContextBroker instance and retrieving of API resources, as well as the getting of groups of entities grouped by type and types of entities.
 
-### General Functions.
+### Headers support
+The entire requests sent to the Orion Context Broker has the option to send in the same request, specific headers in a JSON that is included as a parameter in each function arguments. An example of headers is the following:
+```js
+var headers = {
+    'Fiware-Correlator': '3451e5c2-226d-11e6-aaf0-d48564c29d20'
+}
+```
+You can use another header options if you need them, an empty JSON header, or if you prefer ignore this argument in the function, if the request does not need any special header.
+An example of the headers usage in a function is the following:
+```js
+cb.getEntityAttributeValue("Alert_1d4f3g9s6k", "temperature", headers)
+.then((result) => console.log(result))
+.catch((err) => console.log(err))
+```
+
+### General Functions
 
 #### Connection configuration with an Orion ContextBroker Instance.
-
+The ocb-sender module provides a config function() to specify the url of the Orion ContextBroker instance that will be used in the project. The syntax of this function is the following:
 ```js
 cb.config(urlContextBroker, headers)
  .then((result) => console.log(result))
@@ -66,7 +81,7 @@ cb.getEntityType("Device")
 #### Get EntityTypes of ContextBroker.
 Example
 ```js
-cb.getEntityTypes()
+cb.getEntityTypes(headers)
 .then((result) => console.dir(result))
 .catch((err) => console.log(err))
 ```

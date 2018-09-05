@@ -19,7 +19,9 @@
     * [Delete entity](#delete-entity)
     * [Delete entity attribute](#delete-entity-attribute)
 
-## Read Functions.
+## Read Functions
+
+### Headers support
 
 ### Get Entity Attribute Value.
 Example
