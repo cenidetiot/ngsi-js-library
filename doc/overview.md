@@ -18,6 +18,8 @@ OCB-sender module is an Orion ContextBroker's client. This client manipulates th
 ## How it works the NGSI library
 
 The architecture of the NGSI library is composed by two modules npm: ngsi-parser and ocb-sender. These modules can be imported in only one JavaScript project and work altogether with both modules. Figure shows the modules ngsi-parser and ocb-sender of the architecture of the library.
+
+![NGSI Library Architecture](images/architecture.png)
  
 ### ngsi-parser module
 
