@@ -1,6 +1,6 @@
 # Data Models Schemas Analyzer.
 
-ngsi-parser module helps you to manage Data Models like used in FIWARE. ngsi-parser analyzes if an context entity fulfills with the specification of a data model and, in case of not, identify its errors. In order to do this, the Schema Analyzer of ngsi-parser needs the JSON Schema of the Data Model with which will analyze the context entity and, like this way determinate if the context entity complies with the specification provided by JSON Schema. The official specification in form of JSON Schema of each one data models can be located in the repository “dataModels” of the SmartSDK Github account.
+ngsi-parser module helps you to manage Data Models like used in FIWARE. ngsi-parser analyzes if an context entity fulfills with the specification of a data model and, in case of not, identify its errors. To do this, the Schema Analyzer of ngsi-parser needs the JSON Schema of the Data Model with which will analyze the context entity,  to determinates if the context entity complies with the specification provided by JSON Schema. The official specification (JSON Schema) of each one data models are located in the repository “dataModels” of the SmartSDK  account in Github.
 You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
 
 * [Importing JSON Schemas](#generate-dinamic-query-in-string-format)

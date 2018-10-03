@@ -1,7 +1,7 @@
 # Introduction
 
 Welcome to the quick start guide of NGSI JavaScript Library! In this brief chapter, you will find general information to help you understand the way that the library is conformed and how it works.
-The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. The specification that is intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
+The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. The specification  intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
 The NGSI Library is composed of two npm modules; i.e node packages that can be found in the [official site of npm](https://www.npmjs.com/).
 
 ### NGSI-parser module
@@ -17,13 +17,13 @@ OCB-sender module is an Orion ContextBroker's client. This client manipulates th
 
 ## How it works the NGSI library
 
-The architecture of the NGSI library is composed by two modules npm: ngsi-parser and ocb-sender. These modules can be imported in only one JavaScript project and work altogether with both modules. Figure shows the modules ngsi-parser and ocb-sender of the architecture of the library.
+The architecture of the NGSI library is composed by two modules npm: ngsi-parser and ocb-sender. These modules can be imported in only one JavaScript project and work altogether with both modules. The figure below shows the modules ngsi-parser and ocb-sender of the architecture of the library.
 
 ![NGSI Library Architecture](images/architecture.png)
  
 ### ngsi-parser module
 
-The ngsi-parser module has the objective of analyzing and converting the syntax of a non-structured JSON object or attribute to transform it in a NGSI entity context. Additionally, this module provides the functionality to verify if the entity fulfills with the standard specification of a FIWARE data model. The library verifies if the original JSON structure match with the corresponding FIWARE data model. These data models can be located in the repository “dataModels” of the SmartSDK GitHub account.
+The ngsi-parser module has the objective of analyzing and converting the syntax of a non-structured JSON object or attribute to transform it in a NGSI entity context. Additionally, this module provides the functionality to verify if the entity fulfills with the standard specification of a FIWARE data model. The library verifies if the original JSON structure match with the corresponding FIWARE data model. These data models are located in the repository “dataModels” of the SmartSDK account in Github.
 The ngsi-parser contains three basic elements to perform the analysis of the JSON objects: 
 
 - **a) a JSON Parser**, that includes the function needed for the analysis and transformation of a non-structured JSON object to one that fulfill with the NGSI standard.
@@ -41,8 +41,8 @@ The main objective of ocb-sender module is manipulate the context information of
 
 ## More Information
 
-This is a small introduction of the NGSI Library, if you learn more about the library consult to following sections:
+This is a small introduction of the NGSI Library, if you want to learn more about the library consult the following sections:
 
 - Refer to the [Installation & Administration Manual](adminManual.md) to learn more about installing the modules of the library and getting them running.
-- Refer to the [User & Programmers Manual](usersManual.md) to learn more about the functionalities that offers each one of the library modules and how make operations in conjunction with both modules.
+- Refer to the [User & Programmers Manual](usersManual.md) to learn more about the functionalities that offers each one of the library modules and how make operations altogether with both modules.
 - If exists doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/).

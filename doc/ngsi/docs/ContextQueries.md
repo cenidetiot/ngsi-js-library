@@ -23,7 +23,7 @@ Output
 	?id=Device.*&Device&type=Device&options=keyValues&q=dateObserved>=2018-02-20T16:54:03.931-06:00
 ```
 ### Usage with OCB-sender
-The query generated in the previously example it can be used with the function getWithQuery() of the ocb-sender module. The getWithQuery() function receive as unique parameter the query in string format for request the context information to an Orion ContextBroker instance It’s important to mention that, before of call to the function getWithQuery() is necessary import the ocb-sender module, and  configure the URL for the connection with the Orion ContextBroker instance. In this way is possible to use the getWithQuery() function to retrieve the context information specified in the query.
+The query generated in the previously example it can be used with the function getWithQuery() of the ocb-sender module. The getWithQuery() function receives as unique parameter the query in string format for request the context information to an Orion ContextBroker instance. It’s important to mention that, before of call to the function getWithQuery() is necessary import the ocb-sender module, and  configure the URL for the connection with the Orion ContextBroker instance. In this way is possible to use the getWithQuery() function to retrieve the context information specified in the query.
 Example:
 ```js
 	//Send requests to ContextBroker

@@ -21,8 +21,6 @@
 
 ## Read Functions
 
-### Headers support
-
 ### Get Entity Attribute Value.
 Example
 ```js
