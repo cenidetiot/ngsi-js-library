@@ -2,7 +2,7 @@
 
 Welcome to the quick start guide of NGSI JavaScript Library! In this brief chapter, you will find general information to help you understand the way that the library is conformed and how it works.
 The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. The specification  intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
-The NGSI Library is composed of two npm modules; i.e node packages that can be found in the [official site of npm](https://www.npmjs.com/).
+The NGSI Library is composed of two npm modules: ngsi-parser and ocb-sender, these are node packages that can be found in the [official site of npm](https://www.npmjs.com/).
 
 ### NGSI-parser module
 
@@ -11,13 +11,13 @@ The NGSI-parser module analyzes the syntax of non-structured JSON objects to tra
 - [ngsi-parser repository](https://github.com/cenidetiot/ngsi-parser)
 
 ### OCB-sender module
-OCB-sender module is an Orion ContextBroker's client. This client manipulates the context information of FIWARE-NGSIv2 context entities, with the aim of send the updates of NGSI context entities to the Orion Context Broker and, in this way make operations with them.
+OCB-sender module is an Orion ContextBroker's client. This client manipulates the context information of FIWARE-NGSIv2 context entities, with the aim of send the updates of NGSI context entities to the Orion Context Broker.
 
 - [ocb-sender repository](https://github.com/cenidetiot/ocb-sender)
 
 ## How it works the NGSI library
 
-The architecture of the NGSI library is composed by two modules npm: ngsi-parser and ocb-sender. These modules can be imported in only one JavaScript project and work altogether with both modules. The figure below shows the modules ngsi-parser and ocb-sender of the architecture of the library.
+The architecture of the NGSI library is composed by two modules npm: ngsi-parser and ocb-sender. These modules can be imported in an unique project of JavaScript and work altogether with both modules. The figure below shows the components of each one of the modules that integrates the architecture of the library.
 
 ![NGSI Library Architecture](images/architecture.png)
  
