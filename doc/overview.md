@@ -11,7 +11,6 @@ The NGSI-parser module analyzes the syntax of non-structured JSON objects to tra
 - [ngsi-parser repository](https://github.com/cenidetiot/ngsi-parser)
 
 ### OCB-sender module
-
 OCB-sender module is an Orion ContextBroker's client. This client manipulates the context information of FIWARE-NGSIv2 context entities, with the aim of send the updates of NGSI context entities to the Orion Context Broker.
 
 - [ocb-sender repository](https://github.com/cenidetiot/ocb-sender)
@@ -24,9 +23,13 @@ The architecture of the NGSI library is composed by two modules npm: ngsi-parser
  
 ### ngsi-parser module
 
+<<<<<<< HEAD
 The ngsi-parser module has the aim to analyze the syntax of a non-structured JSON object or attribute, to convert it to an NGSI context entity. Moreover, this module verifies whether a context entity fulfills with the specification of a FIWARE data model.
 
 The library verifies if the original JSON structure of an entity, matches with the corresponding FIWARE data model. These data models are located in the repository **dataModels** of the SmartSDK account in Github.
+=======
+The ngsi-parser module has the objective of analyzing and converting the syntax of a non-structured JSON object or attribute to transform it in a NGSI entity context. Additionally, this module provides the functionality to verify if the entity fulfills with the standard specification of a FIWARE data model. The library verifies if the original JSON structure match with the corresponding FIWARE data model. These data models are located in the repository “dataModels” of the SmartSDK account in Github.
+>>>>>>> e1f0661288d60a68616e198b26d3e092e6dcc015
 The ngsi-parser contains three basic elements to perform the analysis of the JSON objects: 
 
 
@@ -49,5 +52,9 @@ The first three blocks encapsulate the client functionalities of the Orion Conte
 This is a small introduction of the NGSI Library, if you want to learn more about the library consult the following sections:
 
 - Refer to the [Installation & Administration Manual](adminManual.md) to learn more about installing the modules of the library and getting them running.
+<<<<<<< HEAD
 - Refer to the [User & Programmers Manual](usersManual.md) to learn more about the functionalities that offers each of the library modules and how make operations in conjunction with both modules.
+=======
+- Refer to the [User & Programmers Manual](usersManual.md) to learn more about the functionalities that offers each one of the library modules and how make operations altogether with both modules.
+>>>>>>> e1f0661288d60a68616e198b26d3e092e6dcc015
 - If exists doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/).

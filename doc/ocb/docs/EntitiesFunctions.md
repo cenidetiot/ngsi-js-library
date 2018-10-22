@@ -21,37 +21,35 @@
 
 ## Read Functions
 
-### Headers support
-
-### Get Entity Attribute Value.
+### Get Entity Attribute Value
 Example
 ```js
 cb.getEntityAttributeValue("Room1", "temperature")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity Attribute.
+### Get Entity Attribute
 Example
 ```js
 cb.getEntityAttribute("Room1", "temperature")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity Attributes.
+### Get Entity Attributes
 Example
 ```js
 cb.getEntityAttrs("Room1")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity.
+### Get Entity
 Example
 ```js
 cb.getEntity('Room1')
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get entities list of an entity type.
+### Get entities list of an entity type
 
 Example
 ```js
@@ -59,7 +57,7 @@ cb.getEntityListType('Room')
 .then((entities) => {console.log(entities)})
 .catch((err) => console.log(err))
 ```
-### Get All Entities.
+### Get All Entities
 
 Example
 ```js
@@ -67,9 +65,9 @@ cb.listEntities()
 .then((entities) => {console.log(entities)})
 .catch((err) => console.log(err))
 ```
-## Create Functions.
+## Create Functions
 
-### Create Entity.
+### Create Entity
 Example
 ```js
 cb.createEntity({
@@ -88,16 +86,16 @@ cb.createEntity({
 }).then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-##  Update Functions.
+##  Update Functions
 
-### Update Entity Attribute Value.
+### Update Entity Attribute Value
 Example
 ```js
 cb.updateEntityAttributeValue('Room1', 'temperature', 16)
 .then((result) => {console.log(result)})
 .catch((err) => console.log(err))
 ```
-### Update Attribute Data.
+### Update Attribute Data
 Example
 ```js
 cb.updateJSONAttrEntity('Room1', 'temperature', {
@@ -107,7 +105,7 @@ cb.updateJSONAttrEntity('Room1', 'temperature', {
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Replace All Entity Attributes.
+### Replace All Entity Attributes
 Example
 ```js
 cb.replaceAllEntityAttributes("RoomTest", {
@@ -119,7 +117,7 @@ cb.replaceAllEntityAttributes("RoomTest", {
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-###  Update Existing Entity Attributes.
+###  Update Existing Entity Attributes
 Example 
 ```js
 cb.updateEntityAttrs('Room1', { 
@@ -131,7 +129,7 @@ cb.updateEntityAttrs('Room1', {
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Update Or Append Entity Attributes.
+### Update Or Append Entity Attributes
 Example
 ```js
 cb.addJSONAttributeToEntity("Room1",{
@@ -143,16 +141,16 @@ cb.addJSONAttributeToEntity("Room1",{
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-## Delete Functions.
+## Delete Functions
 
-### Delete Entity.
+### Delete Entity
 Example 
 ```js
 cb.deleteEntity("Room1")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Delete Entity Attribute.
+### Delete Entity Attribute
 ```js
 cb.deleteEntityAttribute("RoomTest", "pressure")
 .then((result) => console.log(result))

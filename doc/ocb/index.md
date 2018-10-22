@@ -35,7 +35,7 @@ By other side, if in the JavaScript file is used the ES6 standard can be directl
 ## Module Usage
 The ocb-sender module is composed by the elements described in the architecture of the library section. These elements are: the entities functions block, the queries functions block, and the subscriptions functions block, which are explained in more detail in the following sections. In addition to the specific functionalities of each block, the ocb-sender module considers general functions for the connection with an Orion ContextBroker instance and retrieving of API resources, as well as the getting of groups of entities grouped by type and types of entities.
 
-### Headers support
+### Multi-tenancy / Headers Support
 The entire requests sent to the Orion Context Broker has the option to send in the same request, specific headers in a JSON that is included as a parameter in each function arguments. An example of headers is the following:
 ```js
 var headers = {
@@ -52,7 +52,7 @@ cb.getEntityAttributeValue("Alert_1d4f3g9s6k", "temperature", headers)
 
 ### General Functions
 
-#### Connection configuration with an Orion ContextBroker Instance.
+#### Connection configuration with an Orion ContextBroker Instance
 The ocb-sender module provides a config function() to specify the url of the Orion ContextBroker instance that will be used in the project. The syntax of this function is the following:
 ```js
 cb.config(urlContextBroker, headers)
@@ -65,21 +65,23 @@ cb.config('http://207.249.127.149:1026/v2/', headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-#### Retrieve Orion ContextBroker API Resources.
+#### Retrieve Orion ContextBroker API Resources
+To retrieve the general resources of the Orion ContextBroker API, you can use the following function:
+
 Example
 ```js
 cb.retrieveAPIResources()
 .then((result) => console.log(result))
 .catch((err) console.log(err))
 ```
-#### Get EntityType of ContextBroker.
+#### Get EntityType of ContextBroker
 Example
 ```js
 cb.getEntityType("Device")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-#### Get EntityTypes of ContextBroker.
+#### Get EntityTypes of ContextBroker
 Example
 ```js
 cb.getEntityTypes(headers)
