@@ -1,6 +1,12 @@
-site_name: NGSI-JS Library
-site_description: Library NGSI
+site-name: NGSI-JS Library
+site-url: https://ngsi-js-library.readthedocs.io
+repo_url: https://github.com/cenidetiot/ngsi-js-library
+site_description: NGSI Javascript Library Documentation
 docs_dir: doc/
+theme: readthedocs
+markdown_extensions: [toc,fenced_code]
+extra_css: ["https://fiware.org/style/fiware_readthedocs.css", "https://fiware.org/style/fiware_readthedocs_core.css"]
+edit_uri: 'edit/master/docs/'
 pages:
   - Home: index.md
   - Getting Started: overview.md
@@ -17,8 +23,4 @@ pages:
     - OCB-sender - Mobile Apps Implementation: ocb/docs/UsageInMobileApps.md
     - Implementation examples of both npm modules: modulesUsage/index.md
   - Installation & Administration Manual: adminManual.md
-theme: readthedocs
-markdown_extensions: [toc,fenced_code]
-extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
-repo_url: https://github.com/cenidetiot/ngsi-js-library
-edit_uri: 'edit/master/docs/'
+

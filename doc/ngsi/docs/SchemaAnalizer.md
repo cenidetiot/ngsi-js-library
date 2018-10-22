@@ -1,13 +1,13 @@
 # Data Models Schemas Analyzer.
 
-ngsi-parser module helps you to manage Data Models like used in FIWARE. ngsi-parser analyzes if an context entity fulfills with the specification of a data model and, in case of not, identify its errors. In order to do this, the Schema Analyzer of ngsi-parser needs the JSON Schema of the Data Model with which will analyze the context entity and, like this way determinate if the context entity complies with the specification provided by JSON Schema. The official specification in form of JSON Schema of each one data models can be located in the repository “dataModels” of the SmartSDK Github account.
-You can know about JSON Schemas in  [JSON Schema](http://json-schema.org/).
+The component Data Models Schemas Analyzer of the ngsi-parser module allows to analyses if a context entity complies with the specification of an official data model. To perform this, the Data Models Schemas Analyzer needs the JSON Schema of the data model with which will analyze the context entity, for determinate if the context entity fulfills with the specification provided through JSON Schema. The official specification (JSON Schema) of each one data model are located in the repository “dataModels” of the SmartSDK account in Github.If a context entity does not fulfill with the official specification of a data model the Data Models Schemas Analyzer will identify which are the errors in the structure of the entity.
+You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 
-* [Importing JSON Schemas](#generate-dinamic-query-in-string-format)
+* [Importing JSON Schemas]()
 	* [Importing a JSON Schema from a remote repository]()
 	* [Importing a JSON Schema from an external JSON file]()
 	* [Importing several schemas from different resources]()
-* [Use the data model schemas for verify the structure of a data model](#usage-with-ocb-sender)
+* [Using the data model schemas for verify the structure of a data model]()
 	* [Verifying a data model without storing the JSON Schema]()
 * [Real Example Case]()
 
