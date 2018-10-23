@@ -25,8 +25,8 @@ The next table shows the relation between the data types commonly used for manip
 The special attributes described in the NGSI specification, such as: geo:point, geo:line, geo:polygon and geo:box, will must be specified as data type of the attribute in the definition of an entity.
 
 ## Module Usage
-The ngsi-parser module is composed by the elements described in the architecture of the library section. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer, which are explained in more detail in the following sections.
-It is important to mention that before to implement the functionalities of ngsi-parser module you must import this module in your JavaScript project, as explained in the section [Import the NGSI library modules in a JavaScript project](../usersManual.md)
+The ngsi-parser module is composed by the elements described in the architecture of the library section. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer, which are explained in greater depth in the following sections.
+It is important to mention that, before to implement the functionalities of ngsi-parser module you must import this module in your JavaScript project, as explained the section [Import the NGSI library modules in a JavaScript project](../usersManual.md).
 
 * [JSON Parser Functions](docs/EntitiesFunctions.md)
 * [Queries Parser Functions](docs/ContextQueries.md)
