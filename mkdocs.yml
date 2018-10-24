@@ -20,7 +20,7 @@ pages:
     - Entities Functions: ocb/docs/EntitiesFunctions.md
     - Query Functions: ocb/docs/QueryFunctions.md
     - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
-    - OCB-sender - Mobile Apps Implementation: ocb/docs/ImplementationInMobileApps.md
-    - Implementation examples of both npm modules: modulesUsage/index.md
+    - Implementation of OCB-sender module in Mobile Apps: ocb/docs/ImplementationInMobileApps.md
+    - Basic examples with both npm modules: modulesUsage/index.md
   - Installation & Administration Manual: adminManual.md
 

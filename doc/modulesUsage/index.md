@@ -1,5 +1,5 @@
 
-## Implementation examples of both npm modules
+## Basic examples with both npm modules
 
 #### Create an Entity in the ContextBroker
 ```js
@@ -14,7 +14,7 @@
 				scale: 'Celsious'
 			}
 		},
-		dateStamp : new Date()
+		dateCreated: new Date()
 	})
 	// Send to ContextBroker 
 	cb.createEntity(entity)
@@ -51,15 +51,13 @@
 ```
 
 
-#### Update the JSON Object of an atttribute of the entity
+#### Update the JSON Object of an attribute of the entity
 ```js
 	//Convert a attribute value to NGSI Attribute Value Format
 	var value = ngsi.parseValue(50)
 	
 	// Send to ContextBroker 
-	cb.updateJSONAttrEntity(
-		'idEntity', 'nameAttribute', value
-	)
+	cb.updateJSONAttrEntity('idEntity', 'nameAttribute', value)
 	.then((result) => console.log(result))
 	.catch((err) => console.log(err))
 ```
