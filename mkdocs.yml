@@ -1,5 +1,5 @@
-site-name: NGSI-JS Library
-site-url: https://ngsi-js-library.readthedocs.io
+site_name: NGSI-JS Library
+site_url: https://ngsi-js-library.readthedocs.io
 repo_url: https://github.com/cenidetiot/ngsi-js-library
 site_description: NGSI Javascript Library Documentation
 docs_dir: doc/
