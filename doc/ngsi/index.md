@@ -28,8 +28,8 @@ The special attributes described in the NGSI specification, such as: geo:point, 
 The ngsi-parser module is composed by the elements described in the architecture of the library section. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer, which are explained in greater depth in the following sections.
 It is important to mention that, before to implement the functionalities of ngsi-parser module you must import this module in your JavaScript project, as explained the section [Import the NGSI library modules in a JavaScript project](../usersManual.md).
 
-* [JSON Parser Functions](docs/EntitiesFunctions.md)
-* [Queries Parser Functions](docs/ContextQueries.md)
-* [Data Models Schema Analyzer](docs/SchemaAnalizer.md)
+* [JSON Parser Functions](docs/JSONParser.md)
+* [Queries Parser Functions](docs/QueriesParser.md)
+* [Data Models Schema Analyzer](docs/SchemasAnalizer.md)
 
 

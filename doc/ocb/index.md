@@ -11,7 +11,7 @@ ocb-sender is a npm module that eases the manipulation and update of NGSI entiti
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)
-	* [Mobile Apps Implementation](docs/UsageInMobileApps.md)
+	* [Implementation in Mobile Apps](docs/ImplementationInMobileApps.md)
 
 ## Module Usage
 The ocb-sender module is composed by the elements described in the architecture of the library section. These elements are the entities functions block, the queries functions block and the subscriptions functions block, which are explained in greater depth in the following sections. In addition to the specific functionalities of each block, the ocb-sender module considers general functions for the connection with an Orion ContextBroker instance and retrieving of API resources, as well as the getting of groups of entities grouped by type and types of entities.
