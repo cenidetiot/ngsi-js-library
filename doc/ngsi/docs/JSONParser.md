@@ -7,7 +7,6 @@ The component JSON parser analyzes the content of complete JSON entities, JSON e
 
 ### Parsing an Attribute Value
 When you want to parse an attribute value to the format NGSI, you can use the parseValue() function. This function receives as a parameter the value of the attribute, the data type of this attribute value must be a data type supported by the ngsi-parser module (described in the [Data types supported](../index.md#data-types-supported)).
-
 Example:
 ```js
 	var value = ngsi.parseValue(50)

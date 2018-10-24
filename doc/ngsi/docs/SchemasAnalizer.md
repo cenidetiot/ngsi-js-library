@@ -1,7 +1,7 @@
 # Data Models Schemas Analyzer.
 
 The component Data Models Schemas Analyzer of the ngsi-parser module analyses whether a context entity complies with the specification of an official data model. This Analyzer uses the JSON Schema of the official data model for analyzing the context entity. Afterwards, the analyzer determines if the context entity fulfills with the specification provided through JSON Schema. If a context entity does not fulfill with the official specification of a data model, then the Data Models Schemas Analyzer identify the errors in the structure of the entity.
-The official specification (JSON Schema) of each one data model are located in the repository **dataModels** of the SmartSDK account in Github.
+The official specification (JSON Schema) of each one data model are located in the repository [dataModels](https://github.com/smartsdk/dataModels) of the SmartSDK account in Github.
 You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 
 * [Importing JSON Schemas](#importing-json-schemas)

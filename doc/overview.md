@@ -25,7 +25,7 @@ The architecture of the NGSI library is composed by two modules npm: ngsi-parser
 
 The ngsi-parser module has the aim to analyze the syntax of a non-structured JSON object or attribute, to convert it to an NGSI context entity. Moreover, this module verifies whether a context entity fulfills with the specification of a FIWARE data model.
 
-The library verifies if the original JSON structure of an entity, matches with the corresponding FIWARE data model. These data models are located in the repository **dataModels** of the SmartSDK account in Github.
+The library verifies if the original JSON structure of an entity matches with the corresponding FIWARE data model. These data models are located in the repository **dataModels** of the SmartSDK account in Github.
 
 The ngsi-parser contains three basic elements to perform the analysis of the JSON objects: 
 
