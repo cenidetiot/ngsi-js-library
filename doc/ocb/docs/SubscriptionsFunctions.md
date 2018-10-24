@@ -22,7 +22,7 @@ cb.listSubscriptions(headers)
 .catch((err) => console.log(err))
 ```
 ### Get a Subscription
-The getSubscription() function is used for retrieve a specific subscription. This function receive as parameter the id of the subscription. In the next example, the getSubscription function() receives as parameter the subscription id ***5a83c5463fc4dec59e4ef8e2***.
+The getSubscription() function is used for retrieve a specific subscription. This function receive as parameter the id of the subscription. In the next example, the getSubscription function() receives as parameter the subscription id `5a83c5463fc4dec59e4ef8e2`.
 ```js
 cb.getSubscription("5a83c5463fc4dec59e4ef8e2", headers)
 .then((result) => console.log(result))
@@ -90,7 +90,7 @@ cb.createSubscription({
 ## Update Functions.
 
 ### Update Subscription
-The updateSubscription() function is used for update an existing subscription. This function receives two parameters: the id of the subscription and the body of the subscription. The requirement to use this function is the subscription is stored in ContextBroker so you can update it. The next example shows the update of the subscription with id: ***5a93a9063fc4dec59e4ef8eb***.
+The updateSubscription() function is used for update an existing subscription. This function receives two parameters: the id of the subscription and the body of the subscription. The requirement to use this function is the subscription is stored in ContextBroker so you can update it. The next example shows the update of the subscription with id: `5a93a9063fc4dec59e4ef8eb`.
 ```js
 cb.updateSubscription("5a93a9063fc4dec59e4ef8eb", {
 	"description": "Alert subscription TEST",
@@ -142,7 +142,7 @@ cb.updateSubscription("5a93a9063fc4dec59e4ef8eb", {
 ```
 
 ### Update Subscription Status.
-The updateSubscriptionStatus() function is used for update the status of a subscription. A subscription can have three types of status: active, inactive and failed. The next function shows an example of the update of the status of a subscription, the subscription with id ***5a81e50a3fc4dec59e4ef8dc*** and status ***active***
+The updateSubscriptionStatus() function is used for update the status of a subscription. A subscription can have three types of status: active, inactive and failed. The next function shows an example of the update of the status of a subscription, the subscription with id `5a81e50a3fc4dec59e4ef8dc` and status `active`.
 ```js
 cb.updateSubscriptionStatus("5a81e50a3fc4dec59e4ef8dc", "active", headers)
 .then((result) => console.log(result))
