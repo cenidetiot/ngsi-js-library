@@ -19,7 +19,6 @@ Example:
 	console.log(query)
 ```
 The query can be stored in a variable; in this example, the query generated is stored in the variable `query`. The following line shows the query converted to string format. 
-Output
 ```js
 ?id=Device.*&Device&type=Device&options=keyValues&q=dateObserved>=2018-02-20T16:54:03.931-06:00
 ```

@@ -114,7 +114,7 @@ Example:
 	})
 ```
 ### Real Example Case 
-The next JSON Schema define the official specification for the Alert data model, this JSON schema is in the [dataModels](https://github.com/smartsdk/dataModels) repository of the SmartSDK account in Github), in this [link](https://github.com/smartsdk/dataModels/blob/master/Alert/schema.json).
+The next JSON Schema defines the official specification for the Alert data model, this JSON schema is in the [dataModels](https://github.com/smartsdk/dataModels) repository of the SmartSDK account in Github, in this [link](https://github.com/smartsdk/dataModels/blob/master/Alert/schema.json).
 ```json
 {
 	"$schema": "http://json-schema.org/schema#",
@@ -251,7 +251,7 @@ The next JSON Schema define the official specification for the Alert data model,
 	]
 }
 ```
-The next fragment of code uses the JSON Schema of the Alert data model defined above. The setModel() function receives this schema through the URL of the repository. Afterwards, the alert entity to verify (in this example the alertEntity) is stored in a variable. Finally, the verifyModel() function receives as parameters: the Alert schema, the alert entity and the ocb-sender object.
+The next fragment of code uses the JSON Schema of the Alert data model defined above. The `setModel()` function receives this schema through the URL of the repository. Afterwards, the alert entity to verify (in this example the alertEntity) is stored in a variable. Finally, the verifyModel() function receives as parameters: the Alert schema, the alert entity and the ocb-sender object.
 Example:
 ```javascript 
 var ngsi = require('ngsi-parser');
