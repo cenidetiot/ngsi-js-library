@@ -18,7 +18,7 @@ You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 There are two ways to import a JSON schema with the ngsi-parser module, from an external file or from a remote repository.
 
 ### Importing a JSON Schema from a remote repository.
-When you want to import a JSON schema from a remote repository, you can use the setModel() function. This function receives as parameter a JSON object with the URL of the JSON Schema. The next example shows the setModel() function which receives as parameter the JSON with URL of the JSON schema.
+When you want to import a JSON schema from a remote repository, you can use the`setModel()` function. This function receives as parameter a JSON object with the URL of the JSON Schema. The next example shows the `setModel()` function which receives as parameter the JSON with URL of the JSON schema.
 Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
@@ -27,7 +27,7 @@ Example:
 	});
 ```
 ### Importing a JSON Schema from an external JSON File.
-When you want to import a JSON schema from an external JSON schema file, you must import the external JSON schema file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the setModel() function. You must specify as parameter of the setModel() function , the JSON object that contains the variable of the JSON schema imported. The next example shows the JSON Schema imported in the project, called `mySchema.json`. This schema is stored in a variable called `mySchemaImported` and used in the setModel() function.
+When you want to import a JSON schema from an external JSON schema file, you must import the external JSON schema file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the `setModel()` function. You must specify as parameter of the `setModel()` function , the JSON object that contains the variable of the JSON schema imported. The next example shows the JSON Schema imported in the project, called `mySchema.json`. This schema is stored in a variable called `mySchemaImported` and used in the `setModel()` function.
 Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
@@ -37,7 +37,7 @@ Example:
 	});
 ```
 ### Importing several schemas from different sources 
-The setModel() function manages several JSON schemas from a different  data sources. The example below shows the setModel() function, which receives the JSON schemas grouped in a JSON object. These JSON schemas can be imported from a JSON file or from a remote repository.
+The `setModel()` function manages several JSON schemas from a different  data sources. The following example shows the `setModel()` function, which receives the JSON schemas grouped in a JSON object. These JSON schemas can be imported from a JSON file or from a remote repository.
 Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
@@ -53,8 +53,9 @@ Example:
 ## Using the Data Models Schemas for verifying the structure of an entity
 
 ### Verifying an entity with a JSON Schema file
-One of the functionalities of ngsi-parser module is the ability to verify that a context entity or data model fulfills with the specification of a FIWARE data model. The verifyModel() function of ngsi-parser module verify the data structure of data model and to determine if the data model fulfills with the official specification of the corresponding FIWARE data model. 
-The next fragment of code shows one example of the verification of an entity. The first step is import the JSON schema (in the example this JSON schema is imported from a JSON file called `mySchema.json`), the JSON schema imported have to be defined as JSON parameter in the setModel() function.  The second step is define the entity (in the example the entity is `Room1`). Finally, the third step is to verify the entity, the verifyModel() function receives as parameters the JSON schema and the context entity defined. The function verifyModel() performs a check of the entity for sure that fulfills with the structure defined in the JSON Schema imported. If exist errors, the verifyModel() function return one array with the errors found in the context entity.
+One of the functionalities of ngsi-parser module is the ability to verify that a context entity or data model fulfills with the specification of a FIWARE data model. The `verifyModel()` function of ngsi-parser module verify the data structure of data model and to determine if the data model fulfills with the official specification of the corresponding FIWARE data model. 
+The next fragment of code shows one example of the verification of an entity. The first step is import the JSON schema (in the example this JSON schema is imported from a JSON file called `mySchema.json`), the JSON schema imported have to be defined as JSON parameter in the `setModel()`
+function.  The second step is define the entity (in the example the entity is **Room1**). Finally, the third step is to verify the entity, the `verifyModel()` function receives as parameters the JSON schema and the context entity defined. The function `verifyModel()` performs a check of the entity for sure that fulfills with the structure defined in the JSON Schema imported. If exist errors, the `verifyModel()` function return one array with the errors found in the context entity.
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var mySchemaImported = require('mySchema.json');
@@ -75,7 +76,7 @@ The next fragment of code shows one example of the verification of an entity. Th
 	}
 ```
 ### Verifying an entity with a remote JSON Schema 
-An entity can be verified through a JSON schema imported from a remote repository. The verifyModel() function receives as parameter the ocb-sender object for using the   remote JSON schema, in this case the verifyModel() function becomes to a promise. For example, the next fragment of code shows the following: the modules ngsi-parser y ocb-sender are imported in the JavaScript file and also the JSON schema is imported from a remote repository, through the URL typed in the setModel() function. Afterwards, the verifyModel() function receives as parameters: the remote JSON schema, the entity to verify (in this example, the entity `Room1`),  and the object ocb-sender.
+An entity can be verified through a JSON schema imported from a remote repository. The `verifyModel()` function receives as parameter the ocb-sender object for using the   remote JSON schema, in this case the `verifyModel()` function becomes to a promise. For example, the next fragment of code shows the following: the modules ngsi-parser y ocb-sender are imported in the JavaScript file and also the JSON schema is imported from a remote repository, through the URL typed in the `setModel()` function. Afterwards, the `verifyModel()` function receives as parameters: the remote JSON schema, the entity to verify (in this example, the entity **Room1**),  and the object ocb-sender.
 ```javascript
 	var ngsi = require('ngsi-parser');
 	var ocb = require('ocb-sender');
@@ -98,8 +99,8 @@ An entity can be verified through a JSON schema imported from a remote repositor
 	})
 ```
 #### Verifying an entity with a JSON Schema remote (simplified mode)
-You can verify an entity just using a remote JSON schema and the VerifyModel () function, without define the URL of the schema through the setModel() function.
-The VerifyModel () function receives as parameters: the URL of the schema of the data model, the entity to verify and the ocb-sender object. 
+You can verify an entity just using a remote JSON schema and the `verifyModel()` function, without define the URL of the schema through the `setModel()` function.
+The `verifyModel()` function receives as parameters: the URL of the schema of the data model, the entity to verify and the ocb-sender object. 
 Example:
 ```javascript
 	var ngsi = require('ngsi-parser');
@@ -251,7 +252,7 @@ The next JSON Schema defines the official specification for the Alert data model
 	]
 }
 ```
-The next fragment of code uses the JSON Schema of the Alert data model defined above. The `setModel()` function receives this schema through the URL of the repository. Afterwards, the alert entity to verify (in this example the alertEntity) is stored in a variable. Finally, the verifyModel() function receives as parameters: the Alert schema, the alert entity and the ocb-sender object.
+The next fragment of code uses the JSON Schema of the Alert data model defined above. The `setModel()` function receives this schema through the URL of the repository. Afterwards, the alert entity to verify (in this example the alertEntity) is stored in a variable. Finally, the `verifyModel()` function receives as parameters: the Alert schema, the alert entity and the ocb-sender object.
 Example:
 ```javascript 
 var ngsi = require('ngsi-parser');

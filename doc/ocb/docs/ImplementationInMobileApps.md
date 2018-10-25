@@ -10,7 +10,7 @@ The implementation of ocb-sender module in the development of mobile apps involv
 
 ![OCB-sender usage in Mobile Apps](../../images/ocb-senderUsageMA.png)
 
-In the Future, this issue in ocb-sender npm package could have support so that the user does not have to modify the OCB.js file.
+
 
 
 

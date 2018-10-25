@@ -25,18 +25,18 @@ Yarn is a package manager for node packages. You can use this manager instead of
 
 You can install the ngsi-parser module through one of the following lines of code:
 
+Using npm: 
     npm install ngsi-parser 
     
-   or
-   
+Using yarn:   
     yarn add ngsi-parser
 
 ## OCB - sender module installation
 
 You can install the ocb-sender module through one of the following lines of code:
 
+Using npm: 
     npm install ocb-sender
     
-   or
-   
+Using yarn:
     yarn add ocb-sender
