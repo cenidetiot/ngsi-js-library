@@ -75,7 +75,7 @@ Output
 
 ```
 ### Parsing an Entity
-When you want to convert a complete JSON entity, you can use the `parseEntity()` function. The `parseEntity()` function receives as a parameter the JSON object of a non-structured context entity, and produces as output this same JSON object, but converted in a NGSI entity. In the next example, the `parseEntity()` function receives the JSON of the entity with `id`: **Room1**, and its attributes `temperature` and `dateCreated`. 
+When you want to convert a complete JSON entity, you can use the `parseEntity()` function. The `parseEntity()` function receives as a parameter the JSON object of a non-structured context entity, and produces as output this same JSON object, but converted in a NGSI entity. In the next example, the `parseEntity()` function receives the JSON of the entity with `id`: `Room1`, and its attributes `temperature` and `dateCreated`. 
 ```js
 	var entity = ngsi.parseEntity({
 		id :'Room1',
@@ -90,7 +90,7 @@ When you want to convert a complete JSON entity, you can use the `parseEntity()`
 		dateCreated: new Date()
 	})
 ```
-The parseEntity() function produces as output the JSON entity with `id`: **Room1** converted in a NGSI entity.
+The parseEntity() function produces as output the JSON entity with `id`: `Room1` converted in a NGSI entity.
 Output
 ```json
 	{
