@@ -4,7 +4,7 @@ The pre-requirements for installing and using the modules of NGSI JavaScript Lib
 
 ## Node.js and npm
 
-The installation of Node.js can carried out through an executable installer or by downloading the source code; this choice depends directly on the operating system where it will be installing. You can find the download files and the steps for the installation in the official download link, which is the following: https://nodejs.org/en/download/
+The installation of Node.js can be through an executable installer or by downloading the source code; this choice depends directly on the operating system where it will be installing. You can find the download files and the steps for the installation in the official download link, which is the following: https://nodejs.org/en/download/
 The current version of Node.js is 8.10.0, this version includes npm in its version 5.6.0.
 The installation of both modules of the NGSI JavaScript library requires the previous installation of the following versions of node.js and npm.
 
