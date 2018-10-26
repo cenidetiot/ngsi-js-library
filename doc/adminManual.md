@@ -17,6 +17,7 @@ You can execute the following commands in console for verifying the version of N
 - npm -v
 
 ## Yarn (optional)
+
 Yarn is a package manager for node packages. You can use this manager instead of npm, if you prefer to install the NSGI Library modules with this package manager. The instructions for installing Yarn are described in the official site of Yarn, in the following [link](https://yarnpkg.com/lang/en/docs/install)
 
 # NGSI JavaScript Library Installation
@@ -26,17 +27,23 @@ Yarn is a package manager for node packages. You can use this manager instead of
 You can install the ngsi-parser module through one of the following lines of code:
 
 Using npm: 
+```js
     npm install ngsi-parser 
-    
+```
 Using yarn:   
+```js
     yarn add ngsi-parser
+```
 
 ## OCB - sender module installation
 
 You can install the ocb-sender module through one of the following lines of code:
 
 Using npm: 
-    npm install ocb-sender
-    
+```js
+   npm install ocb-sender
+```
 Using yarn:
-    yarn add ocb-sender
+```js
+yarn add ocb-sender
+```
