@@ -22,10 +22,10 @@ cb.getWithQuery(query, headers)
 ### Query Entities on Area
 The `queryEntitiesOnArea()` function is used for retrieving the entities located within a specific area. This function receives the following four parameters:
 
-- **1.-** The coordinates of the polygon of the area (longitude-latitude array)
-- **2.-** The regular expression for filtering the entities using entity id patterns
-- **3.-** The type of entity for filtering the entities by type.
-- **4.-** The value: true or false, if you prefer visualize the response in format `keyValues`, then, the value of this parameter must be **true**. Of the contrary, if you prefer visualize the response in format `normalized`, then, the value of this parameter must be **false**.
+1. The coordinates of the polygon of the area (longitude-latitude array)
+2. The regular expression for filtering the entities using entity id patterns
+3. The type of entity for filtering the entities by type.
+4. The value: true or false, if you prefer visualize the response in format `keyValues`, the value of this parameter must be **true**. Of the contrary, if you prefer visualize the response in format `normalized`, the value of this parameter must be **false**.
 
 The following function shows the syntaxes of the `queryEntitiesOnArea()` function and the order of the parameters that this function receives.
 ```js
