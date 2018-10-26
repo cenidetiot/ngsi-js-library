@@ -11,7 +11,7 @@ The installation of both modules of the NGSI JavaScript library requires the pre
 - node.js >= 8.x.x (in version 8.10.0 or higher)
 - npm >= 5.x.x (in version 5.0.0 or higher)
 
-You can execute the following commands in console for verify the version of Node.js and npm that you have installed in your operating system.
+You can execute the following commands in console for verifying the version of Node.js and npm that you have installed in your operating system.
 
 - node -v
 - npm -v
