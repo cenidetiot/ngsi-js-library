@@ -1,9 +1,9 @@
 # JSON Parser Functions
 The component JSON parser analyzes the content of complete JSON entities, JSON entity attributes or attributes values, and converts them in objects with FIWARE-NSGIv2 format. The functions of this component are the following:
 
-* [Parsing an Attribute Value](#parse-a-value)
-* [Parsing an Attribute](#parse-an-attribute)
-* [Parsing an Entity](#parse-an-entity)
+* [Parsing an Attribute Value](#parsing-an-attribute-value)
+* [Parsing an Attribute](#parsing-an-attribute)
+* [Parsing an Entity](#parsing-an-entity)
 
 ### Parsing an Attribute Value
 When you want to parse an attribute value to the format NGSI, you can use the `parseValue()`
