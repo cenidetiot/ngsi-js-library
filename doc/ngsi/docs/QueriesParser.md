@@ -24,7 +24,7 @@ The query can be stored in a variable; in this example, the query generated is s
 
 ### Retrieving information with a query string
 The query string generated in the previous the [section](#generating-a-query-string), can be used with the function `getWithQuery()` of the ocb-sender module for retrieving information from the ContextBroker. 
-The `getWithQuery()` function receives as unique parameter the query string. Before using this function, is necessary to import the ocb-sender module in the project, as explained [here](../../usersManual.md), and configure the URL for the connection with the Orion ContextBroker instance, function described in this [section](../../ocb/index.md#connection-configuration-with-an-orion-contextbroker-instance). The following fragment of code shows an example of the `getWithQuery()` function, the parameter `query` makes reference to the query string.
+The `getWithQuery()` function receives as unique parameter the query string. Before using this function, is necessary to import the ocb-sender module in the project, as explained [here](../../usersManual.md); also configure the URL for the connection with the Orion ContextBroker instance, function described in this [section](../../ocb/index.md#connection-configuration-with-an-orion-contextbroker-instance). The following fragment of code shows an example of the `getWithQuery()` function, the parameter `query` makes reference to the query string.
 
 ```js
 	//Send requests to ContextBroker
