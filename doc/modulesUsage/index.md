@@ -1,62 +1,62 @@
 
-## Basic examples with both npm modules
+## Basic examples using both npm modules
 
 #### Create an Entity in the ContextBroker
 ```js
-	//Convert a JSON into NGSI Format
+	//Convert a JSON into NGSI entity
 	var entity = ngsi.parseEntity({
 		id :'Room1',
 		type:'Room',
 		temperature : {
 			value : 50 ,
 			metadata : {
-				frecuency: 40,
+				frequency: 40,
 				scale: 'Celsious'
 			}
 		},
 		dateCreated: new Date()
 	})
-	// Send to ContextBroker 
+	// Send entity to ContextBroker 
 	cb.createEntity(entity)
 	.then((result) => console.log(result))
 	.catch((err) => console.log(err))
 ```
 
-#### Update all the attributes of an entity
+#### Update attribute of an entity
 ```js
-	//Convert a JSON Attribute to NGSI Attribute Format
+	//Convert a JSON Attribute into NGSI Attribute 
 	var attribute = ngsi.parseAttrs({
 		temperature : {
 			value : 50
 		}
 	})
-	// Send to ContextBroker 
+	// Update attribute in the entity stored in the ContextBroker 
 	cb.updateEntityAttrs('Room1', attribute)
 	.then((result) => console.log(result))
 	.catch((err) => console.log(err))
 ```
 
-#### Add a JSON Attribute to a NGSI entity.
+#### Add an attribute to a NGSI entity.
 ```js
-	//Convert a JSON Attribute to NGSI Attribute Format
+	//Convert a JSON Attribute into NGSI Attribute
 	var attribute = ngsi.parseAttrs({
 		temperature : {
 			value : 50
 		}
 	})
-	// Send to ContextBroker 
+	// Update the entity Room1 adding it the new attributte 
 	cb.addJSONAttributeToEntity('Room1', attribute)
 	.then((result) => console.log(result))
 	.catch((err) => console.log(err))
 ```
 
 
-#### Update the JSON Object of an attribute of the entity
+#### Update the data of an entity attribute
 ```js
-	//Convert a attribute value to NGSI Attribute Value Format
+	//Convert a attribute value into NGSI Attribute Value 
 	var value = ngsi.parseValue(50)
 	
-	// Send to ContextBroker 
+	// Update the attribute of the entity with a new value 
 	cb.updateJSONAttrEntity('idEntity', 'nameAttribute', value)
 	.then((result) => console.log(result))
 	.catch((err) => console.log(err))
