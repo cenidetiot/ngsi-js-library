@@ -13,6 +13,7 @@ You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 	* [Verifying an entity with a remote JSON Schema](#verifying-and-entity-with-a-remote-JSON-Schema)
 	* [Verifying an entity with a remote JSON Schema (simplified mode)](#verifying-an-entity-with-a-remote-JSON-Schema-(simplified-mode))
 * [Real Example Case]()
+* [Types of errors in the Analysis of entities](#types-of-errors-in-the-analysis-of-entities)
 
 ## Importing JSON Schemas.
 There are two ways to import a JSON schema with the ngsi-parser module, from an external file or from a remote repository.
@@ -297,7 +298,7 @@ ngsi.verifyModel('Alert', alertEntity, ocb)
 	}
 })
 ```
-### Types of erros in the Analysis of entities
+### Types of errors in the Analysis of entities
 
 #### Errors in the definition of attributes
 

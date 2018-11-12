@@ -26,7 +26,7 @@ The special attributes described in the NGSI specification, such as: geo:point, 
 
 ## Module Usage
 The ngsi-parser module is composed by the elements described in the architecture of the library section. These elements are the JSON parser, the Queries parser and the Data Models Schema Analyzer, which are explained in greater depth in the following sections.
-It is important to mention that, before to implement the functionalities of ngsi-parser module Before using the ngsi-parser module, remember to import it in your project as explained [here].(../usersManual.md)
+It is important to mention that, before to implement the functionalities of ngsi-parser module Before using the ngsi-parser module, remember to import it in your project as explained [here](../usersManual.md).
 
 * [JSON Parser Functions](docs/JSONParser.md)
 * [Queries Parser Functions](docs/QueriesParser.md)

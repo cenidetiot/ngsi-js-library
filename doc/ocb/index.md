@@ -37,7 +37,7 @@ You can use another header options if you need them, or ignore this parameter in
 ### General Functions
 
 #### Connection configuration with an Orion ContextBroker Instance
-The ocb-sender module provides the config() function to specify the URL of the Orion ContextBroker instances that will be used in the project. The syntax of this function is the following:
+The ocb-sender module provides the `config()` function to specify the URL of the Orion ContextBroker instances that will be used in the project. The syntax of this function is the following:
 ```js
 cb.config(urlContextBroker, headers)
  .then((result) => console.log(result))
@@ -57,14 +57,14 @@ cb.retrieveAPIResources(headers)
 .catch((err) => console.log(err))
 ```
 #### Get EntityType of ContextBroker
-The getEntityType () function returns the list of entities that belong to a specific type. For example, the following function returns the set of entities of type `Device`.
+The `getEntityType()` function returns the list of entities that belong to a specific type. For example, the following function returns the set of entities of type `Device`.
 ```js
 cb.getEntityType("Device", headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
 #### Get EntityTypes of ContextBroker
-The entity types stored in a Orion ContextBroker instance can be retrieved through the function getEntityTypes(), for example:
+The entity types stored in a Orion ContextBroker instance can be retrieved through the function `getEntityTypes()`, for example:
 ```js
 cb.getEntityTypes(headers)
 .then((result) => console.dir(result))

@@ -61,4 +61,4 @@ cb.queryEntitiesOnArea([
 .then((result) => console.log(JSON.stringify(result)))
 .catch((err) => console.log(err))
 ```
-**NOTE:** The use of headers in the `queryEntitiesOnArea()` function is not available, if you need to execute a query with specific headers you can use the `getWithQuery()` function as explained above.
+**NOTE:** The use of headers in the `queryEntitiesOnArea()` function is not available, if you need to execute a query with specific headers you can use the `getWithQuery()` function as explained [above](#personalized-query-context).
