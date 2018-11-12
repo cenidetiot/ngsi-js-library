@@ -9,7 +9,6 @@ ocb-sender is a npm module that eases the manipulation and update of NGSI entiti
 		* [Get EntityType of ContextBroker](#get-entitytype-of-contextbroker)
 		* [Get EntitytTypes of ContextBroker](#get-entitytypes-of-contextbroker)
 	* [Specific Functionalities](#specific-functionalities)
-		* [Multi-tenancy](#multi-tenancy)
 		* [Entities Functions](docs/EntitiesFunctions.md)
     	* [Subscriptions Functions](docs/SubscriptionsFunctions.md)
     	* [Query Functions](docs/QueryFunctions.md)

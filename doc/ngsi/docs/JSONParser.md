@@ -149,8 +149,8 @@ ngsi.parseAttrs({}) //OK
 #### parseEntity() function
 The `parseEntity()` function expects by default the definition of an entity through a JSON. The list of invalid inputs to this function is the following:
 
-1. **ngsi.parseEntity(0)**. The `parseEntity()` expected a JSON as parameter. The error returned is: ***Expected JSON***
-2. **ngsi.parseEntity({})**. The `parseEntity()` receives an empty input. This invalid input returns the error: ***Missing id**
+1. **ngsi.parseEntity(0)**. The `parseEntity()` expected a JSON as parameter. This invalid input returns the error: ***Expected JSON***
+2. **ngsi.parseEntity({})**. The `parseEntity()` receives an empty input. This invalid input returns the error: ***Missing id***
 3. **ngsi.parseEntity({id : "Room5"})**. The `parseEntity()` receives a JSON only with the id of the entity. This invalid input returns the error: ***Missing type***
 4. **ngsi.parseEntity({id : "Room3", type : "Room", other : undefined})**. The `parseEntity()` receives an entity with an attribute `undefined`. This invalid input returns the error: ***Data Type not supported, please check the Data Types Supported in https://ngsi-js-library.readthedocs.io/en/latest/ngsi/***
 
