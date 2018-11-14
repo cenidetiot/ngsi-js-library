@@ -298,7 +298,7 @@ ngsi.verifyModel('Alert', alertEntity, ocb)
 	}
 })
 ```
-### Types of errors of the Data Models Schemas Anaylizer
+### Types of errors of the Data Models Schemas Analyzer
 The types of errors produced by the Analyzer are clasified in two groups of errors: errors in the schema, i.e. errors in the JSON Schema that you provided for the analysis of entities; and,errors in the entities denifition, i.e errors in your entity definition according to selected data model.
 
 #### Errors in the JSON Schema provided
