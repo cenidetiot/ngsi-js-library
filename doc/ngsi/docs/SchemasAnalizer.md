@@ -298,28 +298,38 @@ ngsi.verifyModel('Alert', alertEntity, ocb)
 	}
 })
 ```
-### Types of errors in the Analysis of entities
+### Types of errors of the Data Models Schemas Anaylizer
+The types of errors produced by the Analyzer are clasified in two groups of errors: errors in the schema, i.e. errors in the JSON Schema that you provided for the analysis of entities; and,errors in the entities denifition, i.e errors in your entity definition according to selected data model.
 
-#### Errors in the definition of attributes
+#### Errors in the JSON Schema provided
 
-1. The model is malformed needs the property `allOf` or `definition`
-2. The `allOf` atribute should be array  
-3. The `definition` attribute should be JSON 
-4. The attribute `X` is not in the model specification
+1. The schema is not well-defined, needs the property `allOf` or `definition`
+2. The `allOf` property should be an array
+3. The `definition` property should be a JSON 
+4. The schema is not well-defined, needs the property `oneOf` or `required`
+5. The `oneOf` property should be an array
+6. The schema does not fulfill with the required attribute: `options`
+7. Currently, the analyzer only supports the common refs of GSMA, Location and PhysicalObject
 
-#### Errors in the definition of required attributes
+#### Errors in your entity definition
 
-1. The model is malformed needs the property `oneOf` or `required`
-2. The `oneOf` attribute should be array   
-3. The attribute X is required 
-4. The model does not fulfill with the required attribute options
-5. The analyzer currently supports the common refs of GSMA, Location and PhysicalObject  
+1. The attribute X is not an official attribute of the data model 
+2. The attribute X is required in the model definition 
+3. Error in the type of X attribute
+4. Error in the format date of X attribute
 
-#### Errors in the value of the attributes
+For attributes `type`: text:
 
-1. Error in the type of `X` attribute
-2. Error in the format date of `X` attribute
-3. Error: the minLength of `X` attribute is attribute.minLength 
-4. Error: the maxLength of `X` attribute is attribute.maxLength 
-5. Error: the minItems of `X` attribute is attribute.length
-6. Error: The attribute `X` is not in the enum list
+1. Error: the minLength of X attribute must be X
+2. Error: the maxLength of X attribute must be X
+
+For attributes `type`: number:
+
+1. Error: the maximum value of X attribute must be X
+2. Error: the minimum value of X attribute must be X
+
+For attributes `type`: array:
+
+1. Error: the minItems of X attribute must be X
+2. Error: the attribute X is not in the list of allowed values
+

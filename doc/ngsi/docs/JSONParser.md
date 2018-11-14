@@ -120,7 +120,8 @@ Output
 	}
 
 ```
-### Types of errors with invalid inputs
+### Types of errors of JSON Parser
+The JSON Parser can produce different types of errors depending of data received by the functions: parseValue(), parseAttrs and parseValue()
 
 #### parseValue() function
 The `parseValue()` function expects by default a valid NGSI data type. This function returns the following error to an invalid input:
