@@ -4,7 +4,7 @@ The component JSON parser analyzes the content of complete JSON entities, JSON e
 * [Parsing an Attribute Value](#parsing-an-attribute-value)
 * [Parsing an Attribute](#parsing-an-attribute)
 * [Parsing an Entity](#parsing-an-entity)
-* [Types of errors returned by the JSON Parser](#types-of-errors-by-the-json-parser)
+* [Types of errors returned by the JSON Parser](#types-of-errors-returned-by-the-json-parser)
 
 ### Parsing an Attribute Value
 When you want to parse an attribute value to the format NGSI, you can use the `parseValue()`
