@@ -15,7 +15,7 @@ pages:
     - NGSI - parser module: ngsi/index.md
     - JSON Parser functions: ngsi/docs/JSONParser.md
     - Queries Parser functions: ngsi/docs/QueriesParser.md
-    - Data Models Schemas Analyzer: ngsi/docs/SchemasAnalizer.md
+    - Data Models Schemas Analyzer: ngsi/docs/SchemasAnalyzer.md
     - OCB - sender module: ocb/index.md
     - Entities Functions: ocb/docs/EntitiesFunctions.md
     - Query Functions: ocb/docs/QueryFunctions.md
