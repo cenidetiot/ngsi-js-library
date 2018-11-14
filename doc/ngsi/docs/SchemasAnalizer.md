@@ -12,8 +12,8 @@ You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 	* [Verifying an entity with a JSON Schema file](#verifying-an-entity-with-a-JSON-Schema-file)
 	* [Verifying an entity with a remote JSON Schema](#verifying-and-entity-with-a-remote-JSON-Schema)
 	* [Verifying an entity with a remote JSON Schema (simplified mode)](#verifying-an-entity-with-a-remote-JSON-Schema-(simplified-mode))
-* [Real Example Case]()
-* [Types of errors in the Analysis of entities](#types-of-errors-in-the-analysis-of-entities)
+* [Real Example Case](#real-example-case)
+* [Types of errors returned by the Data Models Schemas Analyzer](#types-of-errors-returned-by-the-data-models-schemas-analyzer)
 
 ## Importing JSON Schemas.
 There are two ways to import a JSON schema with the ngsi-parser module, from an external file or from a remote repository.
@@ -298,10 +298,10 @@ ngsi.verifyModel('Alert', alertEntity, ocb)
 	}
 })
 ```
-### Types of errors of the Data Models Schemas Analyzer
+### Types of errors returned by the Data Models Schemas Analyzer
 The types of errors produced by the Analyzer are clasified in two groups of errors: errors in the schema, i.e. errors in the JSON Schema that you provided for the analysis of entities; and,errors in the entities denifition, i.e errors in your entity definition according to selected data model.
 
-#### Errors in the JSON Schema provided
+#### Errors in the JSON Schema
 
 1. The schema is not well-defined, needs the property `allOf` or `definition`
 2. The `allOf` property should be an array

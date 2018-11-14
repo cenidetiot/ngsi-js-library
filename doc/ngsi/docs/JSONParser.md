@@ -4,7 +4,7 @@ The component JSON parser analyzes the content of complete JSON entities, JSON e
 * [Parsing an Attribute Value](#parsing-an-attribute-value)
 * [Parsing an Attribute](#parsing-an-attribute)
 * [Parsing an Entity](#parsing-an-entity)
-* [Types of errors with invalid inputs](#types-of-errors-with-invalid-inputs)
+* [Types of errors returned by the JSON Parser](#types-of-errors-by-the-json-parser)
 
 ### Parsing an Attribute Value
 When you want to parse an attribute value to the format NGSI, you can use the `parseValue()`
@@ -120,10 +120,10 @@ Output
 	}
 
 ```
-### Types of errors of JSON Parser
-The JSON Parser can produce different types of errors depending of data received by the functions: parseValue(), parseAttrs and parseValue()
+### Types of errors returned by the JSON Parser
+The JSON Parser can produce different types of errors depending of data received in each of the functions: parseValue(), parseAttrs and parseValue(). This are described below:
 
-#### parseValue() function
+#### Errors in the parseValue() function
 The `parseValue()` function expects by default a valid NGSI data type. This function returns the following error to an invalid input:
 **Data Type not supported, please check the Data Types Supported in https://ngsi-js-library.readthedocs.io/en/latest/ngsi/**
 
@@ -136,7 +136,7 @@ An example of valid input is the following:
 ngsi.parseValue("ok")
 ```
 
-#### parseAttrs() function
+#### Errors in the parseAttrs() function
 The `parseAttrs()` function expects by default a JSON as input. This function can receive the following invalid inputs:
 
 1. **ngsi.parseAttrs({ attrName: undefined})**. This is an invalid input where is not defined a valid NGSI data type for the attribute. In this case, the `parseAttrs()` function returns the error: ***Data Type not supported, please check the Data Types Supported in https://ngsi-js-library.readthedocs.io/en/latest/ngsi/***
@@ -147,7 +147,7 @@ An example of valid input for the `parseAttrs()` function is the following:
 ngsi.parseAttrs({}) //OK
 ```
 
-#### parseEntity() function
+#### Errors in the parseEntity() function
 The `parseEntity()` function expects by default the definition of an entity through a JSON. The list of invalid inputs that can receive this function is the following:
 
 1. **ngsi.parseEntity(0)**. The `parseEntity()` receives a number as parameter. This invalid input returns the error: ***Expected JSON***
