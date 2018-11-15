@@ -317,19 +317,19 @@ The types of errors produced by the Analyzer are clasified in two groups of erro
 2. The attribute X is required in the model definition 
 3. Error in the type of X attribute
 4. Error in the format date of X attribute
+5. Error: the value X is not in the list of allowed values for the attribute X
 
-For attributes `type`: text:
+For attributes `type`: `Text`
 
 1. Error: the minLength of X attribute must be X
 2. Error: the maxLength of X attribute must be X
 
-For attributes `type`: number:
+For attributes `type`: `Number`
 
 1. Error: the maximum value of X attribute must be X
 2. Error: the minimum value of X attribute must be X
 
-For attributes `type`: array:
+For attributes `type`: `Array` 
 
 1. Error: the minItems of X attribute must be X
-2. Error: the attribute X is not in the list of allowed values
 
