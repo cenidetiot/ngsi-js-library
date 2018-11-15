@@ -21,56 +21,53 @@
 
 ## Read Functions
 
-### Headers support
-
-### Get Entity Attribute Value.
-Example
+### Get Entity Attribute Value
+The `getEntityAttributeValue()` function is used for retrieving a specific value of an entity attribute. In the next example, the `getEntityAttributeValue()` function returns the value of the attribute `temperature` from the entity with `id`: `Room1`.
 ```js
-cb.getEntityAttributeValue("Room1", "temperature")
+cb.getEntityAttributeValue("Room1", "temperature", headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity Attribute.
-Example
+### Get Entity Attribute
+The `getEntityAttribute()` function is used for retrieving the JSONvalue from a specific attribute of an entity. For example, the following function returns the attribute `temperature` from the entity with `id`: `Room1`.
 ```js
-cb.getEntityAttribute("Room1", "temperature")
+cb.getEntityAttribute("Room1", "temperature", headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity Attributes.
-Example
+### Get Entity Attributes
+The `getEntityAttrs()` function is used for retrieving all the attributes that contains an NGSI entity. In the next example, the `getEntityAttrs()` function returns the NGSI attributes of the entity with `id`: `Room1`.
 ```js
-cb.getEntityAttrs("Room1")
+cb.getEntityAttrs("Room1", headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get Entity.
-Example
+### Get Entity
+The `getEntity()` function is used for retrieving the attributes and the type from a specific NSGI entity.In the next example, this function returns the entity type and attributes of the entity with `id`: `Room1`.
 ```js
-cb.getEntity('Room1')
+cb.getEntity("Room1", headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Get entities list of an entity type.
-
-Example
+### Get entities list of an entity type
+The `getEntityListType()` function is used for retrieving the NGSI entities of a specific type. In the next example, this function returns the NGSI entities of `type`: `Room`.
 ```js
-cb.getEntityListType('Room')
+cb.getEntityListType("Room", headers)
 .then((entities) => {console.log(entities)})
 .catch((err) => console.log(err))
 ```
-### Get All Entities.
-
-Example
+### Get All Entities
+The `listEntities()` function is used for retrieving the entities list stored in the Orion ContextBroker. Remember that, the ContextBroker responds to this request with the latest 20 entities stored; for the moment, this function does not support the pagination mechanism to retrieve large sets of resources. 
+Example:
 ```js
-cb.listEntities()
+cb.listEntities(headers)
 .then((entities) => {console.log(entities)})
 .catch((err) => console.log(err))
 ```
-## Create Functions.
+## Create Functions
 
-### Create Entity.
-Example
+### Create Entity
+The function for registering an entity in a Orion ContextBroker instance is the `createEntity()` function. This function receives as parameter the NGSI entity. For example:
 ```js
 cb.createEntity({
     "id": "Room1",
@@ -88,39 +85,42 @@ cb.createEntity({
 }).then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-##  Update Functions.
+##  Update Functions
 
-### Update Entity Attribute Value.
-Example
+### Update Entity Attribute Value
+The function to update a specific value of an attribute is the `updateEntityAttributeValue()`
+function. This function receives as parameters: the entity id, the attribute and the value of the attribute.
+In the next example, this function modifies the attribute temperature of the entity with  `id`: `Room1`, changing the value of this attribute with a value of `16`.
 ```js
-cb.updateEntityAttributeValue('Room1', 'temperature', 16)
-.then((result) => {console.log(result)})
-.catch((err) => console.log(err))
-```
-### Update Attribute Data.
-Example
-```js
-cb.updateJSONAttrEntity('Room1', 'temperature', {
-    "type": "Number",
-    "value": 34.982398
-})
+cb.updateEntityAttributeValue("Room1", "temperature", 16, headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Replace All Entity Attributes.
-Example
+### Update Attribute Data
+The function to update the data of an attribute is the `updateJSONAttrEntity()` function. This function receives as parameters: the id of the entity, the attribute to modify and the JSON object with the data of the attribute. 
+For example, the next function modifies the attribute temperature from the entity `id`: `Room1`, with the data specified in the third parameter of the `updateJSONAttrEntity()` function.
+```js
+cb.updateJSONAttrEntity("Room1", "temperature", {
+    "type": "Number",
+    "value": 34.982398
+}, headers)
+.then((result) => console.log(result))
+.catch((err) => console.log(err))
+```
+### Replace All Entity Attributes
+The `replaceAllEntityAttributes()` function can be used when you require remove all the attributes of an entity, and set new ones to this same entity. The next example removes all the attributes from entity with  `id`: `Room1`, and set a new attribute: the `pressure` attribute.
 ```js
 cb.replaceAllEntityAttributes("RoomTest", {
     "pressure": {
         "value": 720,
         "type": "Integer"
     }
-})
+}, headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-###  Update Existing Entity Attributes.
-Example 
+###  Update Existing Entity Attributes
+The `updateEntityAttrs()` function is used for updating an existing attribute of an entity. This means that the attribute specified in the parameter of this function necessarily have to exist in the entity. For example, the next function updates the attribute `temperature` of entity with `id`: `Room1`.
 ```js
 cb.updateEntityAttrs('Room1', { 
     "temperature": {
@@ -131,30 +131,31 @@ cb.updateEntityAttrs('Room1', {
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Update Or Append Entity Attributes.
-Example
+### Update Or Append Entity Attributes
+The `addJSONAttributeToEntity()` function is used for adding a new attribute of an existing entity. The requirement to use this function is that the entity has been created previously. In the next example, the function updates the entity with `id`: `Room1`, adding it the `pressure` attribute.
 ```js
 cb.addJSONAttributeToEntity("Room1",{
     "pressure":{
 		      "value": 90,
 		      "type": "Integer"
 	    }
-})
+},headers)
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-## Delete Functions.
+## Delete Functions
 
-### Delete Entity.
-Example 
+### Delete Entity
+The `deleteEntity()` function is used for removing an entity from the Orion ContextBroker. This function receives as parameter the `id` of the entity. For example, the next function removes from the ContextBroker the entity with `id`: `Room1`.
 ```js
 cb.deleteEntity("Room1")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```
-### Delete Entity Attribute.
+### Delete Entity Attribute
+The `deleteEntityAttribute()` function is used for removing a specific attribute of an entity. In the next example, this function removes the attribute `pressure` of the entity with `id`: `Room1`.
 ```js
-cb.deleteEntityAttribute("RoomTest", "pressure")
+cb.deleteEntityAttribute("Room1", "pressure")
 .then((result) => console.log(result))
 .catch((err) => console.log(err))
 ```

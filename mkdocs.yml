@@ -1,24 +1,26 @@
 site_name: NGSI-JS Library
-site_description: Library NGSI
+site_url: https://ngsi-js-library.readthedocs.io
+repo_url: https://github.com/cenidetiot/ngsi-js-library
+site_description: NGSI Javascript Library Documentation
 docs_dir: doc/
+theme: readthedocs
+markdown_extensions: [toc,fenced_code]
+extra_css: ["https://fiware.org/style/fiware_readthedocs.css", "https://fiware.org/style/fiware_readthedocs_core.css"]
+edit_uri: 'edit/master/docs/'
 pages:
   - Home: index.md
   - Getting Started: overview.md
   - User & Programmers Manual: 
     - Introduction: usersManual.md
     - NGSI - parser module: ngsi/index.md
-    - JSON Parser functions: ngsi/docs/EntitiesFunctions.md
-    - Queries Parser functions: ngsi/docs/ContextQueries.md
-    - Data Models Schemas Analyzer: ngsi/docs/SchemaAnalizer.md
+    - JSON Parser functions: ngsi/docs/JSONParser.md
+    - Queries Parser functions: ngsi/docs/QueriesParser.md
+    - Data Models Schemas Analyzer: ngsi/docs/SchemasAnalyzer.md
     - OCB - sender module: ocb/index.md
     - Entities Functions: ocb/docs/EntitiesFunctions.md
     - Query Functions: ocb/docs/QueryFunctions.md
     - Suscriptions Functions: ocb/docs/SubscriptionsFunctions.md
-    - OCB-sender - Mobile Apps Implementation: ocb/docs/UsageInMobileApps.md
-    - Implementation examples of both npm modules: modulesUsage/index.md
+    - Implementation of OCB-sender module in Mobile Apps: ocb/docs/ImplementationInMobileApps.md
+    - Basic examples with both npm modules: modulesUsage/index.md
   - Installation & Administration Manual: adminManual.md
-theme: readthedocs
-markdown_extensions: [toc,fenced_code]
-extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
-repo_url: https://github.com/cenidetiot/ngsi-js-library
-edit_uri: 'edit/master/docs/'
+
