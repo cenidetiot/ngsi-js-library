@@ -311,7 +311,7 @@ The types of errors produced by the Analyzer are clasified in two groups of erro
 6. The schema does not fulfill with the required attribute: `options`
 7. Currently, the analyzer only supports the common refs of GSMA, Location and PhysicalObject
 
-#### Errors in your entity definition
+#### Errors in your Entity Definition
 
 1. The attribute X is not an official attribute of the data model 
 2. The attribute X is required in the model definition 
