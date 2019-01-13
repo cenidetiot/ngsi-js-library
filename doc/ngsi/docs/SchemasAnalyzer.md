@@ -1,6 +1,6 @@
 # Data Models Schemas Analyzer.
 
-The component Data Models Schemas Analyzer of the ngsi-parser module analyses whether a context entity fulfills with the specification of an official data model. T. This Analyzer uses the official JSON Schema of data model for analyzing the context entity. If a context entity does not fulfill with the official specification of data model, then the Data Models Schemas Analyzer identify the errors in the structure of the entity.
+The component Data Models Schemas Analyzer of the ngsi-parser module analyses whether a context entity fulfills with the specification of an official data model. This Analyzer uses the official JSON Schema of data model for analyzing the context entity. If a context entity does not fulfill with the official specification of data model, then the Data Models Schemas Analyzer identify the errors in the structure of the entity.
 The official specification (JSON Schema) of each one data model are located in the repository [dataModels](https://github.com/smartsdk/dataModels) of the SmartSDK account in Github.
 You can learn more about JSON Schemas in [JSON Schema](http://json-schema.org/).
 
@@ -28,7 +28,7 @@ When you want to import a JSON schema from a remote repository, you can use the 
 	});
 ```
 ### Importing a JSON Schema from an external JSON File.
-When you want to import a JSON schema from a JSON file, you must import this file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the `setModel()` function. For example, in the next fragment of code is imported the file `mySchema.json and save it in the variable `mySchemaImported, then, this variable is used in the `setModel()`function. 
+When you want to import a JSON schema from a JSON file, you must import this file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the `setModel()` function. For example, in the next fragment of code is imported the file `mySchema.json` and save it in the variable `mySchemaImported`, then, this variable is used in the `setModel()`function. 
 
 ```javascript
 	var ngsi = require('ngsi-parser');

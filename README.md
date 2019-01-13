@@ -8,13 +8,13 @@ The NGSI JavaScript Library is composed of two npm modules:
 
 ### NGSI-parser module
 
-NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv context entities.
+NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into [FIWARE-NGSI v2](http://fiware.github.io/specifications/ngsiv2/stable/) context entities.
 
 [ngsi-parser repository](https://github.com/cenidetiot/ngsi-parser)
 
 ### OCB-sender module
 
-OCB-sender manipulates FIWARE-NGSIv2 context entities with the aim of send them to the FIWARE Orion Context Broker and, in this way make operations with them.
+OCB-sender manipulates [FIWARE-NGSI v2](http://fiware.github.io/specifications/ngsiv2/stable/) context entities with the aim of send them to the FIWARE Orion Context Broker and, in this way make operations with them.
 
 [ocb-sender repository](https://github.com/cenidetiot/ocb-sender)
 
