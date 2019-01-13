@@ -1,12 +1,12 @@
 # Introduction
 
 Welcome to the quick start guide of NGSI JavaScript Library! In this brief chapter, you will find general information to help you understand the way that the library is composed and how it works.
-The NGSI Library manipulates the context entities according to the FIWARE-NGSI v2 API. This specification is intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
+The NGSI Library manipulates the context entities according to the [FIWARE-NGSI API v2](http://fiware.github.io/specifications/ngsiv2/stable/). This specification is intended to manage the entire lifecycle of context information, including updates, queries, registrations, and subscriptions. 
 The NGSI Library is composed of two npm modules: [ngsi-parser](https://www.npmjs.com/package/ngsi-parser) and [ocb-sender](https://www.npmjs.com/package/ocb-sender), these node packages are in the [official site of npm](https://www.npmjs.com/).
 
 ### NGSI-parser module
 
-The NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv2 entities, following the official specification of FIWARE NGSI API version v2. In addition, this module provides functionalities to verify the structure of the entities to check if these fulfill with the specification of an official data model of FIWARE.
+The NGSI-parser module analyzes the syntax of non-structured JSON objects to transform them into FIWARE-NGSIv2 entities, following the  specification of [FIWARE- NGSI API v2](http://fiware.github.io/specifications/ngsiv2/stable/). In addition, this module provides functionalities to verify the structure of the entities to check if these fulfill with the specification of an official data model of FIWARE.
 
 - [ngsi-parser repository](https://github.com/cenidetiot/ngsi-parser)
 
@@ -48,4 +48,4 @@ This is a small introduction of the NGSI Library, if you want to learn more abou
 
 - Refer to the [Installation & Administration Manual](adminManual.md) to learn more about how installing the pre-requirements of the library and its modules. 
 - Refer to the [User & Programmers Manual](usersManual.md) to learn more about the functions of each module of the library with examples.
-- If there are doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/context.Orion/api/v2/stable/).
+- If there are doubts about how the context entities or data models are treated, please visit the reference of [FIWARE- NGSI v2 specification](http://fiware.github.io/specifications/ngsiv2/stable/).
