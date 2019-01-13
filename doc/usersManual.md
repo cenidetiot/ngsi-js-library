@@ -10,7 +10,7 @@ The standard ECMAScript 5 provides the reserved words `var` and `require` for im
 	var ngsi = require('ngsi-parser')
 ```
 ```js
-	var ngsi = require('ocb-sender')
+	var ocb = require('ocb-sender')
 ```
 
 ## ES6 (ECMAScript 6)
@@ -19,5 +19,5 @@ The standard ECMAScript 6 provides the reserved words `import`, `as` and `from` 
 	import NGSI as ngsi from 'ngsi-parser'
 ```
 ```js
-    import OCB as cb from  ocb-sender;
+    import OCB as cb from 'ocb-sender';
 ```

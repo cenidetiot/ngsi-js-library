@@ -28,7 +28,7 @@ When you want to import a JSON schema from a remote repository, you can use the 
 	});
 ```
 ### Importing a JSON Schema from an external JSON File.
-When you want to import a JSON schema from a JSON file, you must import this file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the `setModel()` function. For example, in the next fragment of code is imported the file `mySchema.json and save it in the variable `mySchemaImported, then, this variable is used in the `setModel()`function. 
+When you want to import a JSON schema from a JSON file, you must import this file in the main file of the project, and store the schema in a variable. The variable of the JSON schema imported is used in the `setModel()` function. For example, in the next fragment of code is imported the file `mySchema.json` and save it in the variable `mySchemaImported`, then, this variable is used in the `setModel()`function. 
 
 ```javascript
 	var ngsi = require('ngsi-parser');
